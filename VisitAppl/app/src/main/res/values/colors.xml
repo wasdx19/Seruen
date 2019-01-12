@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="GP_GC_1">#00CA9D</color> <!-- GuidePage_GradientColor_1 -->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#F5F5F5</color>
+    <color name="colorAccent">#F8F8F8</color>
+    <color name="GP_GC_1">#00ca9d</color> <!-- GuidePage_GradientColor_1 -->
     <color name="GP_GC_2">#FBFFC1</color> <!-- GuidePage_GradientColor_2 -->
 
 

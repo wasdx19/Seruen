@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':lib', ':svg-android-1.1'

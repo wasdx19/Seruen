@@ -7,4 +7,47 @@
     android:background="@drawable/gradient"
     tools:context=".GuidePage1">
 
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visitapple"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="201dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_this_app"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="367dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_best_trip_everyday"
+        android:textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="413dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/visiapp_logo"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="85dp"
+        tools:ignore="MissingConstraints" />
+
+
 </android.support.constraint.ConstraintLayout>
