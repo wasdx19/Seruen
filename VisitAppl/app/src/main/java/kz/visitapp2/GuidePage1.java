@@ -12,15 +12,30 @@ import android.widget.TextView;
 
 public class GuidePage1 extends AppCompatActivity {
     TextView text1;
+    TextView text2;
+    TextView text3;
     Typeface tfc1;
+    Typeface tfc2;
+    Typeface tfc3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide_page1);
-        text1 = (TextView)findViewById(R.id.text_1);
+        text1 = (TextView)findViewById(R.id.GP_text_1);
+        text2 = (TextView)findViewById(R.id.GP_text_2);
+        text3 = (TextView)findViewById(R.id.GP_text_3);
 
         tfc1 = Typeface.createFromAsset(getAssets(), "fonts/futura_medium.ttf");
+
+        tfc2 = Typeface.createFromAsset(getAssets(), "fonts/futura_medium.ttf");
+
+        tfc3 = Typeface.createFromAsset(getAssets(), "fonts/futura_medium.ttf");
+
         text1.setTypeface(tfc1);
+        text2.setTypeface(tfc1);
+        text3.setTypeface(tfc1);
+
 
         //        ImageView imageView = (ImageView) findViewById(R.id.imgView);
 //        SVG svg = SVGParser.getSVGFromResource(getResources(), R.drawable);

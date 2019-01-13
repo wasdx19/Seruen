@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">VisitApp2</string>
-    <string name="your_best_trip_everyday">Your best trip everyday.</string>
-    <string name="visitapple">VisitApple</string>
     <string name="what_this_app">What this app?</string>
     <string name="todo">TODO</string>
     <string name="visitapp_logo">visitapp_logo</string>
     <string name="visiapp_logo">visiapp_logo</string>
+    <string name="scroll_1">scroll_1</string>
+    <string name="v">V</string>
+    <string name="visitapple">VisitApple</string>
+    <string name="what_is_app">What is app?</string>
+    <string name="your_best_trip_everyday">Your best trip everyday.</string>
+    <string name="smth">smth</string>
 </resources>
