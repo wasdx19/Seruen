@@ -3,8 +3,8 @@
     <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#f5f5f5</color>
     <color name="colorAccent">#f8f8f8</color>
-    <color name="GP_GC_1">#00CA9D</color> <!-- GuidePage_GradientColor_1 -->
-    <color name="GP_GC_2">#FBFFC1</color> <!-- GuidePage_GradientColor_2 -->
+    <color name="GP_GC_1">#00ca9d</color> <!-- GuidePage_GradientColor_1 -->
+    <color name="GP_GC_2">#fbffc1</color> <!-- GuidePage_GradientColor_2 -->
 
 
 </resources>
