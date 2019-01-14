@@ -1,13 +1,25 @@
 package kz.visitapp2;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class MainPage1 extends AppCompatActivity {
+public class MainPage1 extends Fragment {
+
+    public static MainPage1 newInstance(){
+        MainPage1 fragment=new MainPage1();
+        return fragment;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_page1);
+    }
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance){
+        return inflater.inflate(R.layout.activity_main_page1,container,false);
     }
 }
