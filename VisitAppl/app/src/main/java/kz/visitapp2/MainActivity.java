@@ -1,6 +1,9 @@
 package kz.visitapp2;
 
 import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Shader;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -14,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView botNav=findViewById(R.id.navbar);
+
 
         botNav.setOnNavigationItemSelectedListener(menuItem -> {
             Fragment selectedFragment = null;
@@ -35,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
 
-
             FragmentTransaction tr= getSupportFragmentManager().beginTransaction();
             tr.replace(R.id.frame,selectedFragment);
             tr.commit();
@@ -46,5 +49,7 @@ public class MainActivity extends AppCompatActivity {
         tr1.replace(R.id.frame,MainPage1.newInstance());
         tr1.commit();
     }
+
+
 
 }
