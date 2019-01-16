@@ -1,6 +1,8 @@
 package kz.visitapp2;
 
+import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
@@ -12,12 +14,12 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView botNav=findViewById(R.id.navbar);
-
 
         botNav.setOnNavigationItemSelectedListener(menuItem -> {
             Fragment selectedFragment = null;

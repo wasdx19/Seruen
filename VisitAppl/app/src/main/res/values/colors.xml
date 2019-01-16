@@ -4,10 +4,10 @@
     <color name="colorPrimaryDark">#f5f5f5</color>
     <color name="colorAccent">#f8f8f8</color>
     <color name="navBackground">#000000</color>
-    <color name="colorBackground">#E8E8E8</color>
-    <color name="draw">#66ff66</color>
+    <color name="colorBackground">#DCDCDC</color>
+    <color name="draw">#5C66FF66</color>
     <color name="GP_GC_1">#00CA9D</color> <!-- GuidePage_GradientColor_1 -->
-    <color name="GP_GC_2">#FBFFC1</color> <!-- GuidePage_GradientColor_2 -->
+    <color name="GP_GC_2">#FFC86E</color> <!-- GuidePage_GradientColor_2 -->
 
 
 </resources>
