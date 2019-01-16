@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="kz.visitapp2">
 
     <application
@@ -8,7 +9,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".GuidePage1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,17 +21,12 @@
         <activity android:name=".GuidePage2" />
         <activity android:name=".GuidePage3" />
         <activity android:name=".UserRegPage" />
-        <activity android:name=".MainPage2" />
-        <activity android:name=".MainPage1" />
         <activity android:name=".InterestsPage" />
+        <activity android:name=".MainPage2" />
         <activity android:name=".MainPage3" />
-        <activity android:name=".PlacesPage1" />
         <activity android:name=".PlacesPage2" />
-        <activity android:name=".AR" />
-        <activity android:name=".Map1" />
         <activity android:name=".Map2" />
-        <activity android:name=".Settings" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
