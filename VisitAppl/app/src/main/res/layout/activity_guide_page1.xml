@@ -7,4 +7,5 @@
     android:background="@drawable/gradient"
     tools:context=".GuidePage1">
 
+
 </android.support.constraint.ConstraintLayout>

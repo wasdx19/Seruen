@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VisitApp2</string>
+    <string name="user_interests_page_header_string">Choose your interests</string>
+    <string name="user_interests_page_button_string">OK</string>
 </resources>
