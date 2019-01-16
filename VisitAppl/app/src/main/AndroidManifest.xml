@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InterestsPage">
+        <activity android:name=".GuidePage1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,9 +19,9 @@
         <activity android:name=".GuidePage2" />
         <activity android:name=".GuidePage3" />
         <activity android:name=".UserRegPage" />
-        <activity android:name=".GuidePage1" />
-        <activity android:name=".MainPage1" />
         <activity android:name=".MainPage2" />
+        <activity android:name=".MainPage1" />
+        <activity android:name=".InterestsPage" />
         <activity android:name=".MainPage3" />
         <activity android:name=".PlacesPage1" />
         <activity android:name=".PlacesPage2" />

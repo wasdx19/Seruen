@@ -1,9 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPage2">
+    tools:context=".MainPage2"
+    android:background="@color/colorPrimaryDark">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linear_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/gradient">
+
+            <TextView
+                android:id="@+id/text_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_trips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_trips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_trip_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_trip_type_name_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Breakfast"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_11"
+                        android:layout_width="293dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/rounded_angles"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_12"
+                            android:layout_width="293dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rounded_angles"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_13"
+                            android:layout_width="293dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rounded_angles"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_trip_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_trip_type_name_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Events"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_21"
+                            android:layout_width="293dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rounded_angles"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linear_layout_22"
+                            android:layout_width="293dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rounded_angles"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linear_layout_23"
+                            android:layout_width="293dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rounded_angles"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linear_layout_24"
+                            android:layout_width="293dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rounded_angles"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
