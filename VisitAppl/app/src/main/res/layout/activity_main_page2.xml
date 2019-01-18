@@ -11,23 +11,37 @@
         android:id="@+id/linear_layout_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
         <RelativeLayout
             android:id="@+id/relative_layout_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:background="@drawable/gradient">
+            android:background="@drawable/gradient"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/text_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
                 android:text="HOME"
+                android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:textSize="24dp"
-                android:textAlignment="center"/>
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="38dp"
+                app:srcCompat="@drawable/back_icon" />
 
         </RelativeLayout>
 
@@ -55,48 +69,174 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/text_trip_type_name_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:text="Breakfast"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="14dp" />
+                        <TextView
+                            android:id="@+id/text_trip_type_name_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Breakfast"
+                            android:textColor="@android:color/black"
+                            android:textSize="12dp" />
 
-                    <LinearLayout
-                        android:id="@+id/linear_layout_11"
-                        android:layout_width="293dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="10dp"
-                        android:layout_marginTop="0dp"
-                        android:background="@drawable/rounded_angles"
-                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/relative_layout_11"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rounded_angles"
+                            android:orientation="vertical">
 
-                    </LinearLayout>
+                            <ImageView
+                                android:id="@+id/imageView_place_11"
+                                android:layout_width="45dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/rounded_angles"
+                                app:srcCompat="@android:drawable/btn_star" />
 
-                        <LinearLayout
-                            android:id="@+id/linear_layout_12"
-                            android:layout_width="293dp"
+                            <TextView
+                                android:id="@+id/textView_top_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Tagam ashana jelisi"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView_bottom_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/textView_top_11"
+                                android:layout_marginTop="25dp"
+                                android:text=" 24/7   |   Ave: 1000KZT"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="8dp" />
+
+                            <ImageView
+                                android:id="@+id/imageView_info_11"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/info_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_layout_12"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rounded_angles"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView_place_12"
+                                android:layout_width="45dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/rounded_angles"
+                                app:srcCompat="@android:drawable/btn_star" />
+
+                            <TextView
+                                android:id="@+id/textView_top_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Madeni ashana by Rumi"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView_bottom_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/textView_top_12"
+                                android:layout_marginTop="25dp"
+                                android:text=" 24/7   |   Ave: 2000KZT"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="8dp" />
+
+                            <ImageView
+                                android:id="@+id/imageView_info_12"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/info_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_layout_13"
+                            android:layout_width="300dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rounded_angles"
                             android:orientation="vertical">
 
-                        </LinearLayout>
+                            <ImageView
+                                android:id="@+id/imageView_place_13"
+                                android:layout_width="45dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/rounded_angles"
+                                app:srcCompat="@android:drawable/btn_star" />
 
-                        <LinearLayout
-                            android:id="@+id/linear_layout_13"
-                            android:layout_width="293dp"
-                            android:layout_height="50dp"
-                            android:layout_margin="10dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rounded_angles"
-                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView_top_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Rumi"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
 
-                        </LinearLayout>
+                            <TextView
+                                android:id="@+id/textView_bottom_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/textView_top_13"
+                                android:layout_marginTop="25dp"
+                                android:text=" 24/7   |   Ave: 3000KZT"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="8dp" />
+
+                            <ImageView
+                                android:id="@+id/imageView_info_13"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/info_icon" />
+                        </RelativeLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -112,50 +252,232 @@
                             android:paddingLeft="10dp"
                             android:paddingTop="10dp"
                             android:text="Events"
-                            android:textColor="@android:color/darker_gray"
-                            android:textSize="14dp" />
+                            android:textColor="@android:color/black"
+                            android:textSize="12dp" />
 
-                        <LinearLayout
-                            android:id="@+id/linear_layout_21"
-                            android:layout_width="293dp"
+                        <RelativeLayout
+                            android:id="@+id/relative_layout_21"
+                            android:layout_width="300dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rounded_angles"
                             android:orientation="vertical">
 
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/linear_layout_22"
-                            android:layout_width="293dp"
+                            <ImageView
+                                android:id="@+id/imageView_place_21"
+                                android:layout_width="45dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/rounded_angles"
+                                app:srcCompat="@android:drawable/btn_star" />
+
+                            <TextView
+                                android:id="@+id/textView_top_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Mega center"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView_bottom_51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/textView_top_21"
+                                android:layout_marginTop="25dp"
+                                android:text=" 24/7   |   Ave: 5000KZT"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="8dp" />
+
+                            <ImageView
+                                android:id="@+id/imageView_info_21"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/info_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_layout_22"
+                            android:layout_width="300dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rounded_angles"
                             android:orientation="vertical">
 
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/linear_layout_23"
-                            android:layout_width="293dp"
+                            <ImageView
+                                android:id="@+id/imageView_place_22"
+                                android:layout_width="45dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/rounded_angles"
+                                app:srcCompat="@android:drawable/btn_star" />
+
+                            <TextView
+                                android:id="@+id/textView_top_22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Kok-Tobe"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView_bottom_22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/textView_top_22"
+                                android:layout_marginTop="25dp"
+                                android:text=" 24/7   |   Ave: 5000KZT"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="8dp" />
+
+                            <ImageView
+                                android:id="@+id/imageView_info_22"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/info_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_layout_23"
+                            android:layout_width="300dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rounded_angles"
                             android:orientation="vertical">
 
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/linear_layout_24"
-                            android:layout_width="293dp"
+                            <ImageView
+                                android:id="@+id/imageView_place_23"
+                                android:layout_width="45dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/rounded_angles"
+                                app:srcCompat="@android:drawable/btn_star" />
+
+                            <TextView
+                                android:id="@+id/textView_top_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Shymbulak"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView_bottom_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/textView_top_23"
+                                android:layout_marginTop="25dp"
+                                android:text=" 24/7   |   Ave: 15000KZT"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="8dp" />
+
+                            <ImageView
+                                android:id="@+id/imageView_info_23"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/info_icon" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_layout_24"
+                            android:layout_width="300dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
                             android:layout_marginTop="0dp"
                             android:background="@drawable/rounded_angles"
                             android:orientation="vertical">
 
-                        </LinearLayout>
+                            <ImageView
+                                android:id="@+id/imageView_place_24"
+                                android:layout_width="45dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/rounded_angles"
+                                app:srcCompat="@android:drawable/btn_star" />
+
+                            <TextView
+                                android:id="@+id/textView_top_24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Medeu"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView_bottom_24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignStart="@+id/textView_top_24"
+                                android:layout_marginTop="25dp"
+                                android:text=" 24/7   |   Ave: 2000KZT"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="8dp" />
+
+                            <ImageView
+                                android:id="@+id/imageView_info_24"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/info_icon" />
+                        </RelativeLayout>
                     </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button_trip"
+                        android:layout_width="48dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/rounded_angles"
+                        android:text="Trip"
+                        android:textAlignment="center"
+                        android:textColor="@color/GP_GC_1"
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 
