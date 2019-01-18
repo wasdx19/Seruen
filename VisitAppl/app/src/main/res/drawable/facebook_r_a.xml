@@ -8,6 +8,6 @@
 
     <stroke
         android:width="100dp"
-        android:color="@color/facebook" />
+        />
 
 </shape>

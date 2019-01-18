@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#ffffff</color>
-    <color name="colorPrimaryDark">#F5F5F5</color>
-    <color name="colorAccent">#F8F8F8</color>
-    <color name="GP_GC_1">#00ca9d</color> <!-- GuidePage_GradientColor_1 -->
-    <color name="GP_GC_2">#ffc86e</color> <!-- GuidePage_GradientColor_2 -->
-    <color name="color666">#666666</color>
-    <color name="colorF1F1F1">#f1f1f1</color>
-    <color name="colorF5F5F5">#f5f5f5</color>
-    <color name="facebook">#3b5999</color>
+    <color name="colorPrimaryDark">#f5f5f5</color>
+    <color name="colorAccent">#f8f8f8</color>
+    <color name="navBackground">#000000</color>
+    <color name="colorBackground">#DCDCDC</color>
+    <color name="draw">#5C66FF66</color>
+    <color name="GP_GC_1">#00CA9D</color> <!-- GuidePage_GradientColor_1 -->
+    <color name="GP_GC_2">#FFC86E</color> <!-- GuidePage_GradientColor_2 -->
 </resources>

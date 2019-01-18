@@ -1,13 +1,25 @@
 package kz.visitapp2;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class AR extends AppCompatActivity {
+public class AR extends Fragment {
+
+    public static AR newInstance(){
+        AR fragment=new AR();
+        return fragment;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ar);
+    }
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance){
+        return inflater.inflate(R.layout.activity_ar,container,false);
     }
 }

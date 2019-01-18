@@ -1,16 +1,23 @@
 package kz.visitapp2;
-
-import android.os.Build;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+public class Settings extends Fragment {
 
-public class Settings extends AppCompatActivity {
+    public static Settings newInstance(){
+        Settings fragment=new Settings();
+        return fragment;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+    }
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance){
+        return inflater.inflate(R.layout.activity_settings,container,false);
     }
 }
