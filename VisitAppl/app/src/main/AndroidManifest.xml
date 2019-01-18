@@ -22,11 +22,10 @@
         <activity android:name=".GuidePage3" />
         <activity android:name=".UserRegPage" />
         <activity android:name=".InterestsPage" />
-        <activity android:name=".MainPage2" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".MainPage3" />
         <activity android:name=".PlacesPage2" />
         <activity android:name=".Map2" />
-        <activity android:name=".MainActivity"/>
         <activity android:name=".GuidePage1"/>
     </application>
 
