@@ -1,4 +1,7 @@
-package kz.visitapp2;
+package kz.visitapp2.Services;
+
+import kz.visitapp2.R;
+
 public enum ModelObject {
 
     RED(R.string.GP1, R.layout.activity_guide_page1),

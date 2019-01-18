@@ -1,11 +1,12 @@
-package kz.visitapp2;
+package kz.visitapp2.PlacePageClasses;
 
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import kz.visitapp2.R;
 
 public class PlacesPage1 extends Fragment {
 
