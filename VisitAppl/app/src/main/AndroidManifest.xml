@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".GuidePage1">
+        <activity android:name=".Slider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +27,12 @@
         <activity android:name=".PlacesPage2" />
         <activity android:name=".Map2" />
         <activity android:name=".MainActivity"/>
+        <activity android:name=".GuidePage1"/>
     </application>
 
 </manifest>
+
+
+
+
+

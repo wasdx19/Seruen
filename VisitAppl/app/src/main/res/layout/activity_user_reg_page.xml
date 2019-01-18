@@ -29,7 +29,7 @@
         android:textSize="17sp" />
 
     <TextView
-        android:id="@+id/GP_text_2"
+        android:id="@+id/reg_text"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:layout_above="@+id/imageButton"
@@ -37,15 +37,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="293dp"
         android:layout_marginBottom="66dp"
-        android:text=" Sign up now"
+        android:text="@string/sign_up_now"
         android:textColor="@color/colorPrimary"
-        android:textSize="28sp" />
+        android:textSize="28sp"
+        tools:ignore="UnknownId" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/facebook_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageButton2"
+        android:layout_above="@+id/google_btn"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="0dp"
@@ -55,7 +56,7 @@
         app:srcCompat="@drawable/facebook" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/google_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

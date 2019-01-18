@@ -16,6 +16,7 @@ import me.relex.circleindicator.CircleIndicator;
 
 public class Slider extends AppCompatActivity {
     Button skip;
+
     @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,27 +27,25 @@ public class Slider extends AppCompatActivity {
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slider);
-        ViewPager viewpager = (ViewPager)findViewById(R.id.viewpager);
+        ViewPager viewpager = (ViewPager) findViewById(R.id.viewpager);
         viewpager.setAdapter(new CustomPagerAdapter(this));
 
         CustomPagerAdapter adapter = new CustomPagerAdapter(this);
 
 //        viewpager.setPageTransformer(true, new ZoomInTransformer());
 
-        CircleIndicator indicator = (CircleIndicator)findViewById(R.id.indicator);
+        CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
         indicator.setViewPager(viewpager);
 
-        skip=findViewById(R.id.btn_skip);
-
-        if(ModelObject.values()[2].getLayoutResId()==3) {
-            skip.setText("Get Started");
-        }
+        skip = findViewById(R.id.btn_skip);
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Slider.this,UserRegPage.class);
+                Intent intent = new Intent(Slider.this, UserRegPage.class);
                 startActivity(intent);
             }
         });
     }
 }
+
+
