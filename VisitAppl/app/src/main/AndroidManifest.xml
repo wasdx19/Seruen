@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainPage2">
+        <activity android:name=".Slider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,3 +30,8 @@
     </application>
 
 </manifest>
+
+
+
+
+

@@ -7,6 +7,5 @@
         android:endColor="@color/GP_GC_2"
         android:centerColor="@color/GP_GC_1"
         android:type="linear"
-        android:angle="45"/>
-
+        android:angle="-45"/>
 </shape>

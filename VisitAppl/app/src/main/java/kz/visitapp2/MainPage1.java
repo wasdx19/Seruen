@@ -27,7 +27,7 @@ public class MainPage1 extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getActivity().getWindow();
-            w.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+            w.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
             w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
         super.onCreate(savedInstanceState);
