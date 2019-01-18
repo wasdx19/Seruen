@@ -1,10 +1,12 @@
-package kz.visitapp2;
+package kz.visitapp2.MapPageClasses;
 
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import kz.visitapp2.R;
 
 public class Map2 extends AppCompatActivity {
 
