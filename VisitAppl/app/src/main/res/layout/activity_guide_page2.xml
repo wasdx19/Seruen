@@ -2,59 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".GuidePage2">
+    tools:context=".GuidePage1">
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-53dp"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/GP2_button_skip"
-            android:layout_width="158dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="0dp"
-            android:background="@color/colorPrimary"
-            android:shadowColor="@color/colorPrimary"
-            android:text="SKIP"
-            android:textColor="@color/color666" />
-
-        <Button
-            android:id="@+id/GP2_button_next"
-            android:layout_width="159dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
-            android:background="@color/colorPrimary"
-            android:shadowColor="@color/colorPrimary"
-            android:text="NEXT"
-            android:textColor="@color/GP_GC_1" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="12dp"
-            android:layout_height="match_parent"
-            android:layout_alignStart="@+id/GP1_button_skip"
-            android:layout_alignEnd="@+id/GP3_button_start"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="154dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="155dp"
-            app:srcCompat="@drawable/line" />
-
-    </RelativeLayout>
 
     <ImageView
         android:id="@+id/imageView5"
@@ -66,7 +19,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/GP_text_1"
+        android:id="@+id/GP2_text_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -77,37 +30,28 @@
         android:textSize="17sp" />
 
     <TextView
-        android:id="@+id/GP_text_2"
+        android:id="@+id/GP2_text_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="326dp"
-        android:layout_marginBottom="146dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginBottom="186dp"
         android:text="Why this app?"
         android:textColor="@color/colorPrimary"
         android:textSize="28sp" />
 
     <TextView
-        android:id="@+id/GP_text_3"
+        android:id="@+id/GP2_text_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="368dp"
-        android:layout_marginBottom="122dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginBottom="163dp"
         android:text="Extraordinary trip to get you going."
         android:textColor="@color/colorPrimary" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="62dp"
-        app:srcCompat="@drawable/scroll2" />
 
 </RelativeLayout>

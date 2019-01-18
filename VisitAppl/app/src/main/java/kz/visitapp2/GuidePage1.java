@@ -1,25 +1,29 @@
 package kz.visitapp2;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Build;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.TextView;
 
 //import com.larvalabs.svgandroid.SVG;
 //import com.larvalabs.svgandroid.SVGParser;
 
 public class GuidePage1 extends AppCompatActivity {
-    TextView text1;
-    TextView text2;
-    TextView text3;
-    Typeface tfc1;
-    Typeface tfc2;
-    Typeface tfc3;
+//    TextView text1;
+//    TextView text2;
+//    TextView text3;
+//    TextView text4;
+//    TextView text5;
+//    Typeface tfc1;
+//
+    Button skip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,24 +36,28 @@ public class GuidePage1 extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide_page1);
-        text1 = (TextView)findViewById(R.id.GP_text_1);
-        text2 = (TextView)findViewById(R.id.GP_text_2);
-        text3 = (TextView)findViewById(R.id.GP_text_3);
 
-        tfc1 = Typeface.createFromAsset(getAssets(), "fonts/futura_medium.ttf");
+        //-----------------------------------------------------------------------------------------------
+//        text1 = (TextView)findViewById(R.id.GP1_text_1);
+//        text2 = (TextView)findViewById(R.id.GP1_text_2);
+//        text3 = (TextView)findViewById(R.id.GP1_text_3);
+//        text5 = (TextView)findViewById(R.id.GP1_button_skip);
+//        tfc1 = Typeface.createFromAsset(getAssets(), "fonts/futura_medium.ttf");
+//
+//        text1.setTypeface(tfc1);
+//        text2.setTypeface(tfc1);
+//        text3.setTypeface(tfc1);
+//        text5.setTypeface(tfc1);
 
-        tfc2 = Typeface.createFromAsset(getAssets(), "fonts/futura_medium.ttf");
-
-        tfc3 = Typeface.createFromAsset(getAssets(), "fonts/futura_medium.ttf");
-
-        text1.setTypeface(tfc1);
-        text2.setTypeface(tfc1);
-        text3.setTypeface(tfc1);
-
-
-        //        ImageView imageView = (ImageView) findViewById(R.id.imgView);
-//        SVG svg = SVGParser.getSVGFromResource(getResources(), R.drawable);
-//        imageView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-//        imageView.setImageDrawable(svg.createPictureDrawable());
+        //-----------------------------------------------------------------------------------------------
+//
+//        skip=findViewById(R.id.GP1_button_skip);
+//        skip.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(GuidePage1.this,UserRegPage.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

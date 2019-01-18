@@ -5,5 +5,5 @@
         android:startColor="@color/GP_GC_1"
         android:endColor="@color/GP_GC_2"
         android:type="linear"
-        android:angle="45"/>
+        android:angle="-45"/>
 </shape>
