@@ -6,21 +6,15 @@ import android.os.Build;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
 import android.widget.Button;
 
 
-import com.eftimoff.viewpagertransformers.FlipVerticalTransformer;
-import com.eftimoff.viewpagertransformers.ZoomInTransformer;
-
 import me.relex.circleindicator.CircleIndicator;
 
-public class MainActivity extends AppCompatActivity {
+public class Slider extends AppCompatActivity {
     Button skip;
     @SuppressLint("ResourceType")
     @Override
@@ -31,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_slider);
         ViewPager viewpager = (ViewPager)findViewById(R.id.viewpager);
         viewpager.setAdapter(new CustomPagerAdapter(this));
 
@@ -50,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,UserRegPage.class);
+                Intent intent = new Intent(Slider.this,UserRegPage.class);
                 startActivity(intent);
             }
         });
