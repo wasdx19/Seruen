@@ -155,22 +155,22 @@
                             android:src="@drawable/rec1" />
                     </LinearLayout>
 
+                    <Button
+                        android:id="@+id/button_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="end"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/user_interests_page_button_string"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp" />
+
                 </LinearLayout>
 
             </ScrollView>
 
-            <Button
-                android:id="@+id/button_ok"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="end"
-                android:background="@android:color/transparent"
-                android:gravity="center"
-                android:text="@string/user_interests_page_button_string"
-                android:textColor="@android:color/black"
-                android:textSize="14dp" />
         </RelativeLayout>
 
     </LinearLayout>
