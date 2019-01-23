@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Map1">
+    tools:context=".MapPageClasses.Map1">
 
     <LinearLayout
         android:id="@+id/linear_layout_main"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!--Header-->
         <RelativeLayout
             android:id="@+id/relative_layout_header"
             android:layout_width="match_parent"
@@ -23,14 +24,13 @@
                 android:id="@+id/text_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="Map"
                 android:textColor="@color/colorPrimary"
                 android:textSize="17sp" />
 
         </RelativeLayout>
+        <!--End Header-->
 
+        <!--Body-->
         <RelativeLayout
             android:id="@+id/relative_layout_map"
             android:layout_width="match_parent"
@@ -50,6 +50,7 @@
                 android:textSize="10dp" />
 
         </RelativeLayout>
+        <!--End Body-->
 
     </LinearLayout>
 

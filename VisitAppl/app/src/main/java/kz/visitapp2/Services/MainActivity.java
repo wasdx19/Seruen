@@ -1,12 +1,6 @@
-package kz.visitapp2;
+package kz.visitapp2.Services;
 
 import android.annotation.SuppressLint;
-import android.content.res.ColorStateList;
-import android.content.res.Resources;
-import android.graphics.Color;
-import android.graphics.LinearGradient;
-import android.graphics.Shader;
-import android.os.Build;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -14,6 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import kz.visitapp2.ARPageClasses.AR;
+import kz.visitapp2.MainPageClasses.MainPage1;
+import kz.visitapp2.MapPageClasses.Map1;
+import kz.visitapp2.PlacePageClasses.PlacesPage1;
+import kz.visitapp2.R;
+import kz.visitapp2.SettingPageClasses.Settings;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import kz.visitapp2.Services.ModelObject;
+
 public class CustomPagerAdapter extends PagerAdapter {
 
     private Context mContext;

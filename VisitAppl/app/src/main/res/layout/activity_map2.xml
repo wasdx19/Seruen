@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".Map2">
+    tools:context=".MapPageClasses.Map2">
 
     <LinearLayout
         android:id="@+id/linear_layout_main"
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!--Header-->
         <RelativeLayout
             android:id="@+id/relative_layout_header"
             android:layout_width="match_parent"
@@ -26,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="5dp"
-                android:text="MAP"
+                android:text="Map"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="24dp" />
@@ -42,7 +43,9 @@
                 app:srcCompat="@drawable/back_icon" />
 
         </RelativeLayout>
+        <!--End Header-->
 
+        <!--Body-->
         <RelativeLayout
             android:id="@+id/relative_layout_variants"
             android:layout_width="match_parent"
@@ -77,9 +80,10 @@
                                 <RelativeLayout
                                     android:id="@+id/relative_layout_11"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:layout_margin="10dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
                                     android:background="@drawable/rounded_angles"
                                     android:orientation="vertical">
 
@@ -101,6 +105,7 @@
                                         android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_11"
                                         android:layout_marginTop="25dp"
+                                        android:layout_marginBottom="10dp"
                                         android:text=" 53min   |   Without transfer   |   Fare: 150KZT"
                                         android:textColor="@android:color/darker_gray"
                                         android:textSize="8dp" />
@@ -110,9 +115,10 @@
                                 <RelativeLayout
                                     android:id="@+id/relative_layout_12"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:layout_margin="10dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
                                     android:background="@drawable/rounded_angles"
                                     android:orientation="vertical">
 
@@ -134,6 +140,7 @@
                                         android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_12"
                                         android:layout_marginTop="25dp"
+                                        android:layout_marginBottom="10dp"
                                         android:text=" 56min   |   Without transfer   |   Fare: 150KZT"
                                         android:textColor="@android:color/darker_gray"
                                         android:textSize="8dp" />
@@ -143,9 +150,10 @@
                                 <RelativeLayout
                                     android:id="@+id/relative_layout_13"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:layout_margin="10dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
                                     android:background="@drawable/rounded_angles"
                                     android:orientation="vertical">
 
@@ -167,6 +175,7 @@
                                         android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_13"
                                         android:layout_marginTop="25dp"
+                                        android:layout_marginBottom="10dp"
                                         android:text=" 1hour 1min   |   1 transfer   |   Fare: 230KZT"
                                         android:textColor="@android:color/darker_gray"
                                         android:textSize="8dp" />
@@ -176,9 +185,10 @@
                                 <RelativeLayout
                                     android:id="@+id/relative_layout_14"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:layout_margin="10dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
                                     android:background="@drawable/rounded_angles"
                                     android:orientation="vertical">
 
@@ -200,6 +210,7 @@
                                         android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_14"
                                         android:layout_marginTop="25dp"
+                                        android:layout_marginBottom="10dp"
                                         android:text=" 37min   |   Without transfer   |   Fare: 700KZT"
                                         android:textColor="@android:color/darker_gray"
                                         android:textSize="8dp" />
@@ -209,9 +220,10 @@
                                 <RelativeLayout
                                     android:id="@+id/relative_layout_15"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:layout_margin="10dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
                                     android:background="@drawable/rounded_angles"
                                     android:orientation="vertical">
 
@@ -233,6 +245,7 @@
                                         android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_15"
                                         android:layout_marginTop="25dp"
+                                        android:layout_marginBottom="10dp"
                                         android:text=" 39min   |   Without transfer   |   Fare: 800KZT"
                                         android:textColor="@android:color/darker_gray"
                                         android:textSize="8dp" />
@@ -242,9 +255,10 @@
                                 <RelativeLayout
                                     android:id="@+id/relative_layout_16"
                                     android:layout_width="match_parent"
-                                    android:layout_height="50dp"
-                                    android:layout_margin="10dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
                                     android:background="@drawable/rounded_angles"
                                     android:orientation="vertical">
 
@@ -266,6 +280,7 @@
                                         android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_16"
                                         android:layout_marginTop="25dp"
+                                        android:layout_marginBottom="10dp"
                                         android:text=" 1hour 53min   |   Fare: 0KZT"
                                         android:textColor="@android:color/darker_gray"
                                         android:textSize="8dp" />
@@ -279,6 +294,7 @@
             </LinearLayout>
 
         </RelativeLayout>
+        <!--End Body-->
 
     </LinearLayout>
 

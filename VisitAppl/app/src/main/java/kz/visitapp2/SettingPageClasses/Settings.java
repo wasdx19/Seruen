@@ -1,8 +1,7 @@
-package kz.visitapp2;
 
+package kz.visitapp2.SettingPageClasses;
 import android.os.Build;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,10 +9,12 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class PlacesPage1 extends Fragment {
+import kz.visitapp2.R;
+public class Settings extends Fragment {
 
-    public static PlacesPage1 newInstance(){
-        PlacesPage1 fragment=new PlacesPage1();
+
+    public static Settings newInstance(){
+        Settings fragment=new Settings();
         return fragment;
     }
 
@@ -28,6 +29,6 @@ public class PlacesPage1 extends Fragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance){
-        return inflater.inflate(R.layout.activity_places_page1,container,false);
+        return inflater.inflate(R.layout.activity_settings,container,false);
     }
 }

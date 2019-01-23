@@ -1,14 +1,15 @@
-package kz.visitapp2;
+package kz.visitapp2.MapPageClasses;
 
 import android.os.Build;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+
+import kz.visitapp2.R;
 
 public class Map1 extends Fragment {
 
