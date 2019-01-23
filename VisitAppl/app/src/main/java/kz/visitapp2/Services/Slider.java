@@ -1,4 +1,4 @@
-package kz.visitapp2;
+package kz.visitapp2.Services;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -12,6 +12,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 
+import kz.visitapp2.CustomPagerAdapter;
+import kz.visitapp2.R;
+import kz.visitapp2.RegistrationPageClasses.UserRegPage;
 import me.relex.circleindicator.CircleIndicator;
 
 public class Slider extends AppCompatActivity {

@@ -8,6 +8,7 @@
         </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -16,6 +17,8 @@
             <option value="$PROJECT_DIR$/svg-android-1.1" />
           </set>
         </option>
+=======
+>>>>>>> af4d30f7734eda04642d81164110ed4bff1db8cf
         <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>

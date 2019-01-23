@@ -11,22 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PlacesPage2">
+        <activity android:name=".Services.Slider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GuidePage2" />
-        <activity android:name=".GuidePage3" />
-        <activity android:name=".UserRegPage" />
-        <activity android:name=".InterestsPage" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MainPage3" />
-        <activity android:name=".Slider" />
-        <activity android:name=".Map2" />
-        <activity android:name=".GuidePage1"/>
+        <activity android:name=".GuidePageClasses.GuidePage2" />
+        <activity android:name=".GuidePageClasses.GuidePage3" />
+        <activity android:name=".RegistrationPageClasses.UserRegPage" />
+        <activity android:name=".InterestsPageClasses.InterestsPage" />
+        <activity android:name=".Services.MainActivity" />
+        <activity android:name=".MainPageClasses.MainPage3" />
+        <activity android:name=".PlacePageClasses.PlacesPage2" />
+        <activity android:name=".MapPageClasses.Map2" />
+        <activity android:name=".GuidePageClasses.GuidePage1"/>
     </application>
 
 </manifest>

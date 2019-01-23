@@ -1,16 +1,13 @@
-package kz.visitapp2;
+package kz.visitapp2.GuidePageClasses;
 
-import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Build;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.TextView;
+
+import kz.visitapp2.R;
 
 //import com.larvalabs.svgandroid.SVG;
 //import com.larvalabs.svgandroid.SVGParser;

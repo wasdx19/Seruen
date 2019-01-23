@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlacesPage2"
-    android:background="@color/colorPrimaryDark">
+    tools:context=".PlacePageClasses.PlacesPage2">
 
     <LinearLayout
         android:id="@+id/linear_layout_main"

@@ -1,4 +1,4 @@
-package kz.visitapp2;
+package kz.visitapp2.Services;
 
 import android.annotation.SuppressLint;
 import android.support.design.internal.BottomNavigationItemView;
