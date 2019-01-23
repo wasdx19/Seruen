@@ -1,9 +1,264 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlacesPage2">
+    tools:context=".PlacesPage2"
+    android:background="@color/colorPrimaryDark">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linear_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Header-->
+        <RelativeLayout
+            android:id="@+id/relative_layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="25dp"
+                android:text="Basket"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="38dp"
+                app:srcCompat="@drawable/back_icon" />
+
+        </RelativeLayout>
+        <!--End Header-->
+
+        <!--Body-->
+        <RelativeLayout
+            android:id="@+id/relative_layout_basket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_basket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_angles">
+
+                        <ImageView
+                            android:id="@+id/imageView_place_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rounded_angles"
+                            app:srcCompat="@android:drawable/btn_star" />
+
+                        <TextView
+                            android:id="@+id/textView_top_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Tagam ashana jelisi"
+                            android:textColor="@android:color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView_bottom_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/textView_top_11"
+                            android:layout_marginTop="27.5dp"
+                            android:text=" 24/7   |   Ave: 1000KZT"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="8dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView_like_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toStartOf="@+id/imageView_info_11"
+                            app:srcCompat="@drawable/like_icon" />
+
+                        <ImageView
+                            android:id="@+id/imageView_info_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:srcCompat="@drawable/info_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_angles">
+
+                        <ImageView
+                            android:id="@+id/imageView_place_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rounded_angles"
+                            app:srcCompat="@android:drawable/btn_star" />
+
+                        <TextView
+                            android:id="@+id/textView_top_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Madeni ashana by Rumi"
+                            android:textColor="@android:color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView_bottom_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/textView_top_12"
+                            android:layout_marginTop="27.5dp"
+                            android:text=" 24/7   |   Ave: 2000KZT"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="8dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView_like_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="14dp"
+                            android:layout_toStartOf="@+id/imageView_info_12"
+                            app:srcCompat="@drawable/like_icon" />
+
+                        <ImageView
+                            android:id="@+id/imageView_info_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:srcCompat="@drawable/info_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_angles">
+
+                        <ImageView
+                            android:id="@+id/imageView_place_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/rounded_angles"
+                            app:srcCompat="@android:drawable/btn_star" />
+
+                        <TextView
+                            android:id="@+id/textView_top_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Rumi"
+                            android:textColor="@android:color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView_bottom_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/textView_top_13"
+                            android:layout_marginTop="27.5dp"
+                            android:text=" 24/7   |   Ave: 3000KZT"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="8dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView_like_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="14dp"
+                            android:layout_toStartOf="@+id/imageView_info_13"
+                            app:srcCompat="@drawable/like_icon" />
+
+                        <ImageView
+                            android:id="@+id/imageView_info_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:srcCompat="@drawable/info_icon" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+        <!--End Body-->
+
+    </LinearLayout>
+
+</RelativeLayout>
