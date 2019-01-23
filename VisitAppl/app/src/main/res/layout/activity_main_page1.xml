@@ -18,19 +18,18 @@
         <!--HEADER SECTION-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="65dp"
+            android:background="@drawable/gradient2">
 
             <TextView
                 android:id="@+id/headerTv"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="5dp"
-                android:text="HOME"
-                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Home"
                 android:textColor="@color/colorPrimary"
-                android:textSize="24dp" />
+                android:textSize="17sp" />
         </RelativeLayout>
 
 

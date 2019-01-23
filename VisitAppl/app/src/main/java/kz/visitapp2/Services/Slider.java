@@ -46,6 +46,7 @@ public class Slider extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Slider.this, UserRegPage.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
     }

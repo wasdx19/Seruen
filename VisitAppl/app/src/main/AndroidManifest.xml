@@ -18,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".GuidePageClasses.GuidePage2" />
         <activity android:name=".GuidePageClasses.GuidePage3" />
         <activity android:name=".RegistrationPageClasses.UserRegPage" />

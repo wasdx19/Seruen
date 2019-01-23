@@ -30,6 +30,7 @@ public class InterestsPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(InterestsPage.this, MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
     }

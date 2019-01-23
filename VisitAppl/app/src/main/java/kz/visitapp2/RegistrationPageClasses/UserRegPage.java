@@ -30,7 +30,11 @@ public class UserRegPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(UserRegPage.this, InterestsPage.class);
                 startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
+
+
     }
+
 }
