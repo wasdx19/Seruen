@@ -62,7 +62,32 @@
                         android:id="@+id/linear_layout_search_area"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_angles">
+
+                        <ImageView
+                            android:layout_width="87dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/basket_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <SearchView
+                                android:layout_width="344dp"
+                                android:layout_height="wrap_content">
+
+                            </SearchView>
+
+                            <SearchView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </SearchView>
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
