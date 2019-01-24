@@ -29,7 +29,6 @@
         <activity android:name=".MapPageClasses.Map2" />
         <activity android:name=".GuidePageClasses.GuidePage1"/>
     </application>
-
 </manifest>
 
 
