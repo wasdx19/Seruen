@@ -34,10 +34,5 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'me.relex:circleindicator:1.2.2@aar'
     implementation 'com.eftimoff:android-viewpager-transformers:1.0.1@aar'
-<<<<<<< HEAD
     implementation 'com.android.support:gridlayout-v7:28.0.0'
-=======
-
-
->>>>>>> c08430caf378e8f57d98d801c053a2bbbf74b018
 }
