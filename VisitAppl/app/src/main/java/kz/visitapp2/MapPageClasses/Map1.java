@@ -31,4 +31,5 @@ public class Map1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance){
         return inflater.inflate(R.layout.activity_map1,container,false);
     }
+
 }

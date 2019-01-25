@@ -37,4 +37,9 @@ public class UserRegPage extends AppCompatActivity {
 
     }
 
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
 }

@@ -30,6 +30,7 @@
                 android:layout_centerVertical="true"
                 android:text="Settings"
                 android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/fut_med"
                 android:textSize="17sp" />
 
         </RelativeLayout>
@@ -62,6 +63,7 @@
                         android:layout_marginLeft="10dp"
                         android:text="Main Settings"
                         android:textColor="@color/color666"
+                        android:fontFamily="@font/fut_med"
                         android:textSize="17sp" />
 
                     <RelativeLayout
@@ -81,6 +83,7 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="85dp"
                             android:layout_marginBottom="169dp"
+                            android:fontFamily="@font/fut_med"
                             android:text="Language:"
                             android:textColor="@color/color666" />
 
@@ -96,6 +99,7 @@
                             android:scaleY="0.85"
                             android:text="Kazakh"
                             android:textColor="@color/color666"
+                            android:fontFamily="@font/fut_med"
                             android:textSize="15sp" />
 
                         <RadioButton
@@ -110,6 +114,7 @@
                             android:scaleY="0.85"
                             android:text="English"
                             android:textColor="@color/color666"
+                            android:fontFamily="@font/fut_med"
                             android:textSize="15sp" />
 
                         <RadioButton
@@ -124,6 +129,7 @@
                             android:scaleY="0.85"
                             android:text="Russian"
                             android:textColor="@color/color666"
+                            android:fontFamily="@font/fut_med"
                             android:textSize="15sp" />
 
                         <TextView
@@ -133,6 +139,7 @@
                             android:layout_marginStart="9dp"
                             android:layout_marginTop="80dp"
                             android:text="Background:"
+                            android:fontFamily="@font/fut_med"
                             android:textColor="@color/color666" />
 
                         <ImageButton
@@ -142,6 +149,7 @@
                             android:layout_marginStart="102dp"
                             android:layout_marginTop="84dp"
                             android:background="@android:color/transparent"
+                            android:fontFamily="@font/fut_med"
                             android:src="@drawable/optimised21" />
 
                         <TextView
@@ -151,6 +159,7 @@
                             android:layout_marginStart="123dp"
                             android:layout_marginTop="80dp"
                             android:text="Default"
+                            android:fontFamily="@font/fut_med"
                             android:textColor="@color/color666" />
 
                         <TextView
@@ -160,6 +169,7 @@
                             android:layout_marginStart="9dp"
                             android:layout_marginTop="118dp"
                             android:text="Notifications:"
+                            android:fontFamily="@font/fut_med"
                             android:textColor="@color/color666" />
 
                         <Switch
@@ -171,6 +181,9 @@
                             android:background="@android:color/transparent"
                             android:scaleX="0.85"
                             android:scaleY="0.85"
+                            android:text="On"
+                            android:fontFamily="@font/fut_med"
+                            android:textColor="@color/color666"
                             android:thumbTint="@color/GP_GC_1" />
 
                         <TextView
@@ -180,6 +193,7 @@
                             android:layout_marginStart="9dp"
                             android:layout_marginTop="151dp"
                             android:text="Interests:"
+                            android:fontFamily="@font/fut_med"
                             android:textColor="@color/color666" />
 
                         <Button
@@ -190,6 +204,7 @@
                             android:layout_marginTop="154dp"
                             android:background="@drawable/rounded_angels2"
                             android:text="Change"
+                            android:fontFamily="@font/fut_med"
                             android:textColor="@color/GP_GC_1"
                             android:textSize="11sp" />
 
@@ -210,6 +225,7 @@
                         android:layout_height="wrap_content"
                         android:text="About"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/fut_med"
                         android:textColor="@color/color666"
                         android:textSize="17sp" />
 
@@ -226,7 +242,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in velit eu nunc lobortis fringilla. Suspendisse eget luctus diam. Fusce efficitur ligula vel augue rhoncus egestas. Integer vitae tellus blandit, tempor odio quis, vulputate tortor."
-                            android:textColor="@color/color666" />
+                            android:textColor="@color/color666"
+                            android:fontFamily="@font/fut_med" />
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -241,6 +258,7 @@
                 android:layout_marginEnd="135dp"
                 android:background="@drawable/rounded_angles"
                 android:text="Exit"
+                android:fontFamily="@font/fut_med"
                 android:textColor="@color/GP_GC_1" />
 
         </RelativeLayout>
