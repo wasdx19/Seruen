@@ -25,6 +25,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="179dp"
+        android:fontFamily="@font/fut_med"
         android:text="VisitApple"
         android:textColor="@color/colorPrimary"
         android:textSize="17sp" />
@@ -36,6 +37,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/fut_med"
         android:layout_marginTop="286dp"
         android:layout_marginBottom="186dp"
         android:text="Why this app?"
@@ -49,6 +51,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/fut_med"
         android:layout_marginTop="328dp"
         android:layout_marginBottom="163dp"
         android:text="Extraordinary trip to get you going."

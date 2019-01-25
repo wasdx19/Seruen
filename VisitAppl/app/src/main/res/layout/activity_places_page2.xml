@@ -14,23 +14,23 @@
         android:orientation="vertical">
 
         <!--Header-->
+
         <RelativeLayout
-            android:id="@+id/relative_layout_header"
+            android:id="@+id/status_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gradient"
-            android:gravity="center">
+            android:layout_height="65dp"
+            android:background="@drawable/gradient2">
 
             <TextView
-                android:id="@+id/text_header"
-                android:layout_width="match_parent"
+                android:id="@+id/headerTv"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="25dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/fut_med"
                 android:text="Basket"
-                android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:textSize="24dp" />
+                android:textSize="17sp" />
+
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -39,10 +39,11 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="38dp"
+                android:layout_marginTop="26dp"
                 app:srcCompat="@drawable/back_icon" />
 
         </RelativeLayout>
+
         <!--End Header-->
 
         <!--Body-->
@@ -89,40 +90,43 @@
                             android:layout_alignParentTop="true"
                             android:layout_marginStart="60dp"
                             android:layout_marginTop="10dp"
+                            android:fontFamily="@font/fut_med"
                             android:text="Tagam ashana jelisi"
                             android:textColor="@android:color/black"
-                            android:textSize="12dp" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textView_bottom_11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"
                             android:layout_alignStart="@+id/textView_top_11"
+                            android:layout_alignParentTop="true"
                             android:layout_marginTop="27.5dp"
+                            android:fontFamily="@font/fut_med"
                             android:text=" 24/7   |   Ave: 1000KZT"
                             android:textColor="@android:color/darker_gray"
-                            android:textSize="8dp" />
-
-                        <ImageView
-                            android:id="@+id/imageView_like_11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_toStartOf="@+id/imageView_info_11"
-                            app:srcCompat="@drawable/like_icon" />
+                            android:textSize="12sp" />
 
                         <ImageView
                             android:id="@+id/imageView_info_11"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/info_icon" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginEnd="10dp"
-                            app:srcCompat="@drawable/info_icon" />
+                            android:layout_marginTop="29.5dp"
+                            android:layout_marginEnd="38dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/like_icon" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -152,40 +156,43 @@
                             android:layout_alignParentTop="true"
                             android:layout_marginStart="60dp"
                             android:layout_marginTop="10dp"
+                            android:fontFamily="@font/fut_med"
                             android:text="Madeni ashana by Rumi"
                             android:textColor="@android:color/black"
-                            android:textSize="12dp" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textView_bottom_12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"
                             android:layout_alignStart="@+id/textView_top_12"
+                            android:layout_alignParentTop="true"
                             android:layout_marginTop="27.5dp"
+                            android:fontFamily="@font/fut_med"
                             android:text=" 24/7   |   Ave: 2000KZT"
                             android:textColor="@android:color/darker_gray"
-                            android:textSize="8dp" />
-
-                        <ImageView
-                            android:id="@+id/imageView_like_12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginBottom="14dp"
-                            android:layout_toStartOf="@+id/imageView_info_12"
-                            app:srcCompat="@drawable/like_icon" />
+                            android:textSize="12sp" />
 
                         <ImageView
                             android:id="@+id/imageView_info_12"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/info_icon" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginEnd="10dp"
-                            app:srcCompat="@drawable/info_icon" />
+                            android:layout_marginTop="29.5dp"
+                            android:layout_marginEnd="38dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/like_icon" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -215,40 +222,43 @@
                             android:layout_alignParentTop="true"
                             android:layout_marginStart="60dp"
                             android:layout_marginTop="10dp"
+                            android:fontFamily="@font/fut_med"
                             android:text="Rumi"
                             android:textColor="@android:color/black"
-                            android:textSize="12dp" />
+                            android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textView_bottom_13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"
                             android:layout_alignStart="@+id/textView_top_13"
+                            android:layout_alignParentTop="true"
                             android:layout_marginTop="27.5dp"
+                            android:fontFamily="@font/fut_med"
                             android:text=" 24/7   |   Ave: 3000KZT"
                             android:textColor="@android:color/darker_gray"
-                            android:textSize="8dp" />
-
-                        <ImageView
-                            android:id="@+id/imageView_like_13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginBottom="14dp"
-                            android:layout_toStartOf="@+id/imageView_info_13"
-                            app:srcCompat="@drawable/like_icon" />
+                            android:textSize="12sp" />
 
                         <ImageView
                             android:id="@+id/imageView_info_13"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/info_icon" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginEnd="10dp"
-                            app:srcCompat="@drawable/info_icon" />
+                            android:layout_marginTop="29.5dp"
+                            android:layout_marginEnd="38dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/like_icon" />
                     </RelativeLayout>
 
                 </LinearLayout>
