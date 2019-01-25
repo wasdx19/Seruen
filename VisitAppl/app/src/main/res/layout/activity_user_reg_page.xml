@@ -26,6 +26,7 @@
         android:layout_marginTop="179dp"
         android:text="VisitApple"
         android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/fut_med"
         android:textSize="17sp" />
 
     <TextView
@@ -40,6 +41,7 @@
         android:text="@string/sign_up_now"
         android:textColor="@color/colorPrimary"
         android:textSize="28sp"
+        android:fontFamily="@font/fut_med"
         tools:ignore="UnknownId" />
 
     <ImageButton
@@ -53,6 +55,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="15dp"
         android:background="@android:color/transparent"
+        android:fontFamily="@font/fut_med"
         app:srcCompat="@drawable/facebook" />
 
     <ImageButton
@@ -66,6 +69,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="60dp"
         android:background="@android:color/transparent"
+        android:fontFamily="@font/fut_med"
         app:srcCompat="@drawable/google" />
 
 

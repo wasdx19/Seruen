@@ -25,6 +25,7 @@
         android:background="@color/colorPrimary"
         app:itemTextColor="@android:color/background_dark"
         app:itemIconTint="@drawable/bottom_navigation_colors"
+        android:theme="@style/Widget.BottomNavigationView"
         app:menu="@menu/nav_menu" />
 
 </RelativeLayout>

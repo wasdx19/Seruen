@@ -28,12 +28,16 @@ public class MainPage1 extends Fragment {
             w.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
             w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
+
         super.onCreate(savedInstanceState);
         headerTV=getActivity().findViewById(R.id.headerTv);
+
+
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance){
         return inflater.inflate(R.layout.activity_main_page1,container,false);
+
     }
 
     /*public void grad(TextView v) {
@@ -43,4 +47,5 @@ public class MainPage1 extends Fragment {
                 Shader.TileMode.CLAMP);
         v.getPaint().setShader(myShader);
     }*/
+
 }
