@@ -49,6 +49,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
+                    <!--Apportion field-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -56,25 +57,119 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:padding="10dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/apportionName_tv"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="10dp"
                             android:textColor="@android:color/black"
                             android:fontFamily="@font/fut_med"
                             android:text="Apportion" />
 
-                        <TextView
-                            android:id="@+id/textView2"
+                        <GridLayout
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:fontFamily="@font/fut_med"
-                            android:text="TextView" />
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="9dp"
+                            android:columnCount="4">
+
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="fill_vertical"
+                                android:src="@drawable/optimised10" />
+
+                            <EditText
+                                android:id="@+id/editText7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="9"
+                                android:text="Date:"
+                                android:textSize="14dp"
+                                android:layout_marginLeft="3dp"
+                                android:textColor="@color/GP_GC_1"
+                                android:fontFamily="@font/fut_med"/>
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="fill_vertical"
+                                android:src="@drawable/optimised11" />
+
+                            <EditText
+                                android:id="@+id/editText8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:textColor="@color/GP_GC_1"
+                                android:text="Name"
+                                android:textSize="14dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/fut_med"/>
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="fill_vertical"
+                                android:src="@drawable/optimised12" />
+
+                            <EditText
+                                android:id="@+id/editText9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="9"
+                                android:textColor="@color/GP_GC_1"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="14dp"
+                                android:text="Name"
+                                android:fontFamily="@font/fut_med"/>
+
+                            <ImageView
+                                android:id="@+id/imageView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="fill_vertical"
+                                android:layout_marginLeft="4dp"
+                                android:src="@drawable/map" />
+
+                            <EditText
+                                android:id="@+id/editText10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/GP_GC_1"
+                                android:textSize="14dp"
+                                android:text="Name"
+                                android:fontFamily="@font/fut_med"/>
+                        </GridLayout>
+
+                        <Button
+                            android:layout_width="45dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/rounded_angles"
+                            android:text="Trip"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/GP_GC_1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="9dp"
+                            android:layout_gravity="end"
+                            android:fontFamily="@font/fut_med"/>
+
                     </LinearLayout>
 
+                    <!--AR field-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -101,6 +196,7 @@
                             android:text="TextView" />
                     </LinearLayout>
 
+                    <!--Map field-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -127,6 +223,7 @@
                             android:text="TextView" />
                     </LinearLayout>
 
+                    <!--Places field-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
