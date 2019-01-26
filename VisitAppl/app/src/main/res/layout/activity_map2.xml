@@ -15,31 +15,31 @@
 
         <!--Header-->
         <RelativeLayout
-            android:id="@+id/relative_layout_header"
+            android:id="@+id/status_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gradient"
-            android:gravity="center">
+            android:layout_height="65dp"
+            android:background="@drawable/gradient2">
 
             <TextView
-                android:id="@+id/text_header"
-                android:layout_width="match_parent"
+                android:id="@+id/headerTv"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:text="Map"
-                android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:textSize="24dp" />
+                android:fontFamily="@font/fut_med"
+                android:textSize="17sp" />
+
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="38dp"
+                android:layout_marginTop="26dp"
                 app:srcCompat="@drawable/back_icon" />
 
         </RelativeLayout>
@@ -58,38 +58,48 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <LinearLayout
+                    android:id="@+id/linear_layout_search_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rounded_angles"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/fromto_icon" />
+
                     <LinearLayout
-                        android:id="@+id/linear_layout_search_area"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:background="@drawable/rounded_angles">
+                        android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="87dp"
-                            android:layout_height="match_parent"
-                            app:srcCompat="@drawable/basket_icon" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                        <EditText
+                            android:id="@+id/editText_from"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="16sp"
+                            android:text="From"
+                            android:fontFamily="@font/fut_med"/>
 
-                            <SearchView
-                                android:layout_width="344dp"
-                                android:layout_height="wrap_content">
-
-                            </SearchView>
-
-                            <SearchView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                            </SearchView>
-
-                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/editText_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="16sp"
+                            android:text="To"
+                            android:fontFamily="@font/fut_med"/>
 
                     </LinearLayout>
+
+                </LinearLayout>
 
                     <ScrollView
                         android:id="@+id/scrollView"
@@ -118,22 +128,27 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentTop="true"
-                                        android:layout_margin="10dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text="Bus 86"
                                         android:textColor="@android:color/black"
-                                        android:textSize="12dp" />
+                                        android:textSize="16sp" />
 
                                     <TextView
                                         android:id="@+id/textView_bottom_11"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_11"
+                                        android:layout_alignParentTop="true"
                                         android:layout_marginTop="25dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text=" 53min   |   Without transfer   |   Fare: 150KZT"
                                         android:textColor="@android:color/darker_gray"
-                                        android:textSize="8dp" />
+                                        android:textSize="12sp" />
 
                                 </RelativeLayout>
 
@@ -153,22 +168,27 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentTop="true"
-                                        android:layout_margin="10dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text="Bus 45"
                                         android:textColor="@android:color/black"
-                                        android:textSize="12dp" />
+                                        android:textSize="16sp" />
 
                                     <TextView
                                         android:id="@+id/textView_bottom_12"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_12"
+                                        android:layout_alignParentTop="true"
                                         android:layout_marginTop="25dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text=" 56min   |   Without transfer   |   Fare: 150KZT"
                                         android:textColor="@android:color/darker_gray"
-                                        android:textSize="8dp" />
+                                        android:textSize="12sp" />
 
                                 </RelativeLayout>
 
@@ -188,22 +208,27 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentTop="true"
-                                        android:layout_margin="10dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text="Bus 1 | Metro"
                                         android:textColor="@android:color/black"
-                                        android:textSize="12dp" />
+                                        android:textSize="16sp" />
 
                                     <TextView
                                         android:id="@+id/textView_bottom_13"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_13"
+                                        android:layout_alignParentTop="true"
                                         android:layout_marginTop="25dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text=" 1hour 1min   |   1 transfer   |   Fare: 230KZT"
                                         android:textColor="@android:color/darker_gray"
-                                        android:textSize="8dp" />
+                                        android:textSize="12sp" />
 
                                 </RelativeLayout>
 
@@ -223,22 +248,27 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentTop="true"
-                                        android:layout_margin="10dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text="Yandex taxi"
                                         android:textColor="@android:color/black"
-                                        android:textSize="12dp" />
+                                        android:textSize="16sp" />
 
                                     <TextView
                                         android:id="@+id/textView_bottom_14"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_14"
+                                        android:layout_alignParentTop="true"
                                         android:layout_marginTop="25dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text=" 37min   |   Without transfer   |   Fare: 700KZT"
                                         android:textColor="@android:color/darker_gray"
-                                        android:textSize="8dp" />
+                                        android:textSize="12sp" />
 
                                 </RelativeLayout>
 
@@ -258,22 +288,27 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentTop="true"
-                                        android:layout_margin="10dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text="Uber taxi"
                                         android:textColor="@android:color/black"
-                                        android:textSize="12dp" />
+                                        android:textSize="16sp" />
 
                                     <TextView
                                         android:id="@+id/textView_bottom_15"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_15"
+                                        android:layout_alignParentTop="true"
                                         android:layout_marginTop="25dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text=" 39min   |   Without transfer   |   Fare: 800KZT"
                                         android:textColor="@android:color/darker_gray"
-                                        android:textSize="8dp" />
+                                        android:textSize="12sp" />
 
                                 </RelativeLayout>
 
@@ -293,22 +328,27 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentStart="true"
                                         android:layout_alignParentTop="true"
-                                        android:layout_margin="10dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text="Walk"
                                         android:textColor="@android:color/black"
-                                        android:textSize="12dp" />
+                                        android:textSize="16sp" />
 
                                     <TextView
                                         android:id="@+id/textView_bottom_16"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_alignParentTop="true"
                                         android:layout_alignStart="@+id/textView_top_16"
+                                        android:layout_alignParentTop="true"
                                         android:layout_marginTop="25dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/fut_med"
                                         android:text=" 1hour 53min   |   Fare: 0KZT"
                                         android:textColor="@android:color/darker_gray"
-                                        android:textSize="8dp" />
+                                        android:textSize="12sp" />
 
                                 </RelativeLayout>
 

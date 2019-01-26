@@ -4,6 +4,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compile group: 'com.romandanylyk', name: 'pageindicatorview', version: '1.0.1'
 
+    compile 'me.anwarshahriar:calligrapher:1.0'
+
 }
 
 sourceCompatibility = "7"
