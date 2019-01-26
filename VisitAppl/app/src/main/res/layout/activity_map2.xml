@@ -58,38 +58,48 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <LinearLayout
+                    android:id="@+id/linear_layout_search_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rounded_angles"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/fromto_icon" />
+
                     <LinearLayout
-                        android:id="@+id/linear_layout_search_area"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:background="@drawable/rounded_angles">
+                        android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="87dp"
-                            android:layout_height="match_parent"
-                            app:srcCompat="@drawable/basket_icon" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                        <EditText
+                            android:id="@+id/editText_from"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="16sp"
+                            android:text="From"
+                            android:fontFamily="@font/fut_med"/>
 
-                            <SearchView
-                                android:layout_width="344dp"
-                                android:layout_height="wrap_content">
-
-                            </SearchView>
-
-                            <SearchView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                            </SearchView>
-
-                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/editText_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="16sp"
+                            android:text="To"
+                            android:fontFamily="@font/fut_med"/>
 
                     </LinearLayout>
+
+                </LinearLayout>
 
                     <ScrollView
                         android:id="@+id/scrollView"
