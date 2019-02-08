@@ -25,7 +25,7 @@
         android:background="@color/colorPrimary"
         app:itemTextColor="@android:color/background_dark"
         app:itemIconTint="@drawable/bottom_navigation_colors"
-        android:theme="@style/Widget.BottomNavigationView"
+
         app:menu="@menu/nav_menu" />-->
 
     <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
@@ -34,10 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
-        app:itemIconTint="@color/color666"
         app:itemTextColor="@color/navBackground"
+        app:itemIconTint="gradient"
         app:menu="@menu/nav_menu"
-
         />
 
 </RelativeLayout>
