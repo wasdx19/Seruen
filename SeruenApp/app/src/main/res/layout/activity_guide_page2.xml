@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Activities.GuidePageActivities.GuidePage1">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/GP2_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        android:fontFamily="@font/fut_med"
+        android:text="VisitApple"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/GP2_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/fut_med"
+        android:layout_marginTop="286dp"
+        android:layout_marginBottom="186dp"
+        android:text="Why this app?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/GP2_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/fut_med"
+        android:layout_marginTop="328dp"
+        android:layout_marginBottom="163dp"
+        android:text="Extraordinary trip to get you going."
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

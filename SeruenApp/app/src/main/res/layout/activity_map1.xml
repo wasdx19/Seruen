@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MapPageFragments.MapPageFragment1">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Header-->
+
+        <RelativeLayout
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/gradient2">
+
+            <TextView
+                android:id="@+id/headerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Map"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/fut_med"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+        <!--End Header-->
+
+        <!--Body-->
+        <RelativeLayout
+            android:id="@+id/relative_layout_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_trip"
+                android:layout_width="48dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_angles"
+                android:text="Trip"
+                android:textColor="@color/GP_GC_1"
+                android:fontFamily="@font/fut_med"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+        <!--End Body-->
+
+    </LinearLayout>
+
+</RelativeLayout>
