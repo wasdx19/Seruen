@@ -16,7 +16,7 @@
 
     </FrameLayout>
 
-    <android.support.design.widget.BottomNavigationView
+    <!--<android.support.design.widget.BottomNavigationView
         android:id="@+id/navbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,6 +26,18 @@
         app:itemTextColor="@android:color/background_dark"
         app:itemIconTint="@drawable/bottom_navigation_colors"
         android:theme="@style/Widget.BottomNavigationView"
-        app:menu="@menu/nav_menu" />
+        app:menu="@menu/nav_menu" />-->
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/botNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/color666"
+        app:itemTextColor="@color/navBackground"
+        app:menu="@menu/nav_menu"
+
+        />
 
 </RelativeLayout>
