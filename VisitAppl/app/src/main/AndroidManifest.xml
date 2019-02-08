@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="kz.visitapp2">
+    package="kz.seruen">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Utils.Sliders.GuidePageSlider">
+        <activity android:name="kz.seruen.Utils.Sliders.GuidePageSlider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,14 +19,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activities.GuidePageActivities.GuidePage2" />
-        <activity android:name=".Activities.GuidePageActivities.GuidePage3" />
-        <activity android:name=".Activities.RegistrationPageActivities.UserRegPage" />
-        <activity android:name=".Activities.InterestsPageActivities.InterestsPage" />
-        <activity android:name=".Activities.MainActivity" />
-        <activity android:name=".Fragments.PlacesPageFragments.PlacesPageFragment2" />
-        <activity android:name=".Fragments.MapPageFragments.MapPageFragment2" />
-        <activity android:name=".Activities.GuidePageActivities.GuidePage1"/>
+        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage2" />
+        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage3" />
+        <activity android:name="kz.seruen.Activities.RegistrationPageActivities.UserRegPage" />
+        <activity android:name="kz.seruen.Activities.InterestsPageActivities.InterestsPage" />
+        <activity android:name="kz.seruen.Activities.MainActivity" />
+        <activity android:name="kz.seruen.Fragments.PlacesPageFragments.PlacesPageFragment2" />
+        <activity android:name="kz.seruen.Fragments.MapPageFragments.MapPageFragment2" />
+        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage1"/>
     </application>
 </manifest>
 
