@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Services.Slider">
+        <activity android:name=".Utils.Sliders.GuidePageSlider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,15 +19,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".GuidePageClasses.GuidePage2" />
-        <activity android:name=".GuidePageClasses.GuidePage3" />
-        <activity android:name=".RegistrationPageClasses.UserRegPage" />
-        <activity android:name=".InterestsPageClasses.InterestsPage" />
-        <activity android:name=".Services.MainActivity" />
-        <activity android:name=".MainPageClasses.MainPage3" />
-        <activity android:name=".PlacePageClasses.PlacesPage2" />
-        <activity android:name=".MapPageClasses.Map2" />
-        <activity android:name=".GuidePageClasses.GuidePage1"/>
+        <activity android:name=".Activities.GuidePageActivities.GuidePage2" />
+        <activity android:name=".Activities.GuidePageActivities.GuidePage3" />
+        <activity android:name=".Activities.RegistrationPageActivities.UserRegPage" />
+        <activity android:name=".Activities.InterestsPageActivities.InterestsPage" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Fragments.PlacesPageFragments.PlacesPageFragment2" />
+        <activity android:name=".Fragments.MapPageFragments.MapPageFragment2" />
+        <activity android:name=".Activities.GuidePageActivities.GuidePage1"/>
     </application>
 </manifest>
 

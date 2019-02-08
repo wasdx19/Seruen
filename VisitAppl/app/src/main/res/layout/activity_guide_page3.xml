@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".GuidePageClasses.GuidePage1">
+    tools:context=".Activities.GuidePageActivities.GuidePage1">
 
 
     <ImageView
