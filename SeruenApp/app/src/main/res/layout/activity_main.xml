@@ -35,7 +35,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
         app:itemTextColor="@color/navBackground"
-        app:itemIconTint="gradient"
+        app:itemIconTint="@color/GP_GC_1"
         app:menu="@menu/nav_menu"
         />
 

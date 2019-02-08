@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val botNav= findViewById<BottomNavigationViewEx>(R.id.botNav)
         botNav?.enableAnimation(false)
-        botNav?.enableShiftingMode(false)
+        botNav?.enableShiftingMode(true)
         botNav?.enableItemShiftingMode(false)
 
 
