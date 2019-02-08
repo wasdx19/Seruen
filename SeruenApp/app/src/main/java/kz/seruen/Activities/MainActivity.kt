@@ -5,6 +5,8 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.internal.BottomNavigationItemView
+import android.support.design.internal.BottomNavigationMenuView
 
 import kz.seruen.Fragments.ArFragments.ArFragment
 import kz.seruen.Fragments.HomePageFragments.HomePageFragment1
@@ -12,6 +14,7 @@ import kz.seruen.Fragments.MapPageFragments.MapPageFragment1
 import kz.seruen.Fragments.PlacesPageFragments.PlacesPageFragment1
 import kz.seruen.R
 import kz.seruen.Fragments.SettingPageFragments.SettingsPageFragment
+import kz.seruen.Utils.BottomNavigationViewMenu.BottomNavigationViewEx
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,7 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val botNav = findViewById<BottomNavigationView>(R.id.navbar)
+        val botNav = findViewById<BottomNavigationViewEx>(R.id.botNav)
+        botNav.enableAnimation(false)
+        botNav.enableShiftingMode(false)
+        botNav.enableItemShiftingMode(false)
+
 
         botNav.setOnNavigationItemSelectedListener { menuItem ->
             var selectedFragment: Fragment? = null
