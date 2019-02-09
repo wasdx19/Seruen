@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
-        app:itemTextColor="@android:color/background_dark"
-        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@color/navBackground"
+        app:itemIconTint="@color/GP_GC_1"
         app:menu="@menu/nav_menu"
         />
 
