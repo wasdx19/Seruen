@@ -3,7 +3,7 @@
 
     <item
         android:state_checked="true"
-        android:color="@color/draw"/>
+        android:color="@color/GP_GC_1"/>
 
     <item
         android:state_checked="false"

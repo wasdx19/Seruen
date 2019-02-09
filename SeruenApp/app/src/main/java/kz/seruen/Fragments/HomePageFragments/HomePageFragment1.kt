@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import android.widget.Button
 import android.widget.TextView
 
 import kz.seruen.R
@@ -14,7 +15,7 @@ import kz.seruen.R
 class HomePageFragment1 : Fragment() {
 
     internal var headerTV: TextView?=null
-
+    internal var btn_trip: Button?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             val w = activity!!.window
@@ -25,6 +26,13 @@ class HomePageFragment1 : Fragment() {
         super.onCreate(savedInstanceState)
         headerTV = activity!!.findViewById(R.id.headerTv)
 
+        /*btn_trip = view!!.findViewById(R.id.bex_trip)
+        var selectedFragment: Fragment? = fragmentManager?.findFragmentById(R.id.a_m_p_2)
+        btn_trip?.setOnClickListener {
+            val tr = fragmentManager?.beginTransaction()
+            tr?.replace(R.id.a_m_p_1, selectedFragment!!)
+            tr?.commit()
+        }*/
 
     }
 
@@ -40,13 +48,4 @@ class HomePageFragment1 : Fragment() {
             return fragment
         }
     }
-
-    /*public void grad(TextView v) {
-        Shader myShader = new LinearGradient(
-                0, 0, 0, 100,
-                Color.WHITE, Color.BLACK,
-                Shader.TileMode.CLAMP);
-        v.getPaint().setShader(myShader);
-    }*/
-
 }
