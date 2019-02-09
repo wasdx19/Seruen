@@ -22,16 +22,5 @@ class GuidePage2 : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_guide_page2)
-        //
-        //        skip=findViewById(R.id.GP1_button_skip);
-        //
-        //
-        //        skip.setOnClickListener(new View.OnClickListener() {
-        //            @Override
-        //            public void onClick(View v) {
-        //                Intent intent = new Intent(GuidePage2.this,UserRegPage.class);
-        //                startActivity(intent);
-        //            }
-        //        });
     }
 }

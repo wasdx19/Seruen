@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="69dp"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/enter" />
 
     <TextView
         android:id="@+id/GP_text_1"
@@ -24,10 +24,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="179dp"
-        android:text="VisitApple"
-        android:textColor="@color/colorPrimary"
         android:fontFamily="@font/fut_med"
-        android:textSize="17sp" />
+        android:text="Seruen"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/reg_text"

@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="69dp"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/earthlogo" />
 
     <TextView
         android:id="@+id/GP1_text_1"
@@ -26,9 +26,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="179dp"
         android:fontFamily="@font/fut_med"
-        android:text="VisitApple"
+        android:text="Seruen"
         android:textColor="@color/colorPrimary"
-        android:textSize="17sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/GP1_text_2"
@@ -55,7 +55,8 @@
         android:layout_marginBottom="163dp"
         android:fontFamily="@font/fut_med"
         android:text=" Your best trip everyday."
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp" />
 
 </RelativeLayout>
 

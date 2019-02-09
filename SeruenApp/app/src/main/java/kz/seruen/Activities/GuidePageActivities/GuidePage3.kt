@@ -19,15 +19,5 @@ class GuidePage3 : AppCompatActivity() {
         }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_guide_page3)
-        //
-        //        getStarted=findViewById(R.id.GP3_button_start);
-        //
-        //        getStarted.setOnClickListener(new View.OnClickListener() {
-        //            @Override
-        //            public void onClick(View v) {
-        //                Intent intent = new Intent(GuidePage3.this,UserRegPage.class);
-        //                startActivity(intent);
-        //            }
-        //        });
     }
 }

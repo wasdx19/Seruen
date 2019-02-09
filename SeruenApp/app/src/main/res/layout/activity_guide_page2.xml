@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="69dp"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/bbb" />
 
     <TextView
         android:id="@+id/GP2_text_1"
@@ -26,9 +26,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="179dp"
         android:fontFamily="@font/fut_med"
-        android:text="VisitApple"
+        android:text="Seruen"
         android:textColor="@color/colorPrimary"
-        android:textSize="17sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/GP2_text_2"
@@ -51,10 +51,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/fut_med"
         android:layout_marginTop="328dp"
         android:layout_marginBottom="163dp"
+        android:fontFamily="@font/fut_med"
         android:text="Extraordinary trip to get you going."
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp" />
 
 </RelativeLayout>

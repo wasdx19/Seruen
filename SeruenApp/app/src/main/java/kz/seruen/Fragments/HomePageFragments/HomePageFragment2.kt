@@ -1,26 +1,32 @@
 package kz.seruen.Fragments.HomePageFragments
 
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.view.WindowManager
-
 import kz.seruen.R
 
-class HomePageFragment2 : AppCompatActivity() {
-
+class HomePageFragment2 : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            val w = window
+            val w = activity!!.window
             w.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
-            w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION)
+            w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         }
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_page2)
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstance: Bundle?): View? {
+        return inflater.inflate(R.layout.activity_main_page2, container, false)
+
+    }
+    companion object {
+        fun newInstance(): HomePageFragment2 {
+            val fragment = HomePageFragment2()
+            return fragment
+        }
     }
 }
