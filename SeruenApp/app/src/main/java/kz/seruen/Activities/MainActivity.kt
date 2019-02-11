@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
 import kz.seruen.Fragments.ArFragments.ArFragment
 import kz.seruen.Fragments.HomePageFragments.HomePageFragment1
