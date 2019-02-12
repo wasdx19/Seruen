@@ -29,6 +29,7 @@ class HomePageFragment1 : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstance: Bundle?): View? {
         val v=inflater.inflate(R.layout.activity_main_page1, container, false)
 
+
         /*btn_trip= v!!.findViewById(R.id.bex_trip)
         var selectedFragment: Fragment? = HomePageFragment2.newInstance()
         btn_trip?.setOnClickListener {
