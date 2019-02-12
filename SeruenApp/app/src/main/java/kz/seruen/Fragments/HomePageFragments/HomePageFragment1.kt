@@ -1,8 +1,11 @@
 package kz.seruen.Fragments.HomePageFragments
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.support.v4.app.Fragment
 import android.os.Bundle
+import android.support.v4.app.FragmentActivity
+import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import android.view.LayoutInflater
 import android.view.View
@@ -26,42 +29,22 @@ class HomePageFragment1 : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
+    @SuppressLint("ResourceType")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstance: Bundle?): View? {
         val v=inflater.inflate(R.layout.activity_main_page1, container, false)
+        val fragmentActivity: FragmentActivity?=activity
 
-        /*btn_trip= v!!.findViewById(R.id.bex_trip)
-        var selectedFragment: Fragment? = HomePageFragment2.newInstance()
+        btn_trip= v!!.findViewById(R.id.bex_trip)
         btn_trip?.setOnClickListener {
+            val fragmentManager:FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
-            tr?.replace(R.id.frame, selectedFragment!!)
+            val tripFragment:Fragment=HomePageFragment2.newInstance()
+            tr?.replace(R.id.frame, tripFragment!!)
             tr?.commit()
-        }*/
+        }
 
         return v
     }
-
-    /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initView(view)
-    }
-
-    fun initView(v:View?){
-        btn_trip=v!!.findViewById(R.id.bex_trip)
-        btn_trip?.setOnClickListener(this)
-    }
-
-    fun changeFragment(){
-        var selectedFragment: Fragment? = fragmentManager?.findFragmentById(R.id.a_m_p_2)
-        val tr = fragmentManager?.beginTransaction()
-        tr?.replace(R.id.a_m_p_1, selectedFragment!!)?.addToBackStack(null)
-        tr?.commit()
-    }
-
-    override fun onClick(v: View?) {
-        when (v?.getId()){
-            R.id.bex_trip -> changeFragment()
-        }
-    }*/
 
     companion object {
 
