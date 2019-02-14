@@ -38,6 +38,7 @@ class HomePageFragment2 : Fragment() {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
             val tripFragment:Fragment=HomePageFragment1.newInstance()
+            tr?.setCustomAnimations(R.anim.abc_fade_in, R.anim.abc_fade_out)
             tr?.replace(R.id.frame, tripFragment!!)
             tr?.commit()
         }

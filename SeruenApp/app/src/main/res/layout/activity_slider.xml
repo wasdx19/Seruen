@@ -40,4 +40,22 @@
         android:background="@android:color/transparent"
         android:fontFamily="@font/fut_med"
         android:text="SKIP" />
+
+
+    <Button
+        android:id="@+id/btn_get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/fut_med"
+        android:text="GET STARTED"
+        android:visibility="gone"/>
 </RelativeLayout>

@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main_page2.*
 
 import kz.seruen.R
 
@@ -36,13 +37,14 @@ class HomePageFragment1 : Fragment() {
 
         btn_trip= v!!.findViewById(R.id.bex_trip)
         btn_trip?.setOnClickListener {
+
             val fragmentManager:FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
             val tripFragment:Fragment=HomePageFragment2.newInstance()
-            tr?.replace(R.id.frame, tripFragment!!)
+            tr?.setCustomAnimations(R.anim.abc_fade_in, R.anim.abc_fade_out)
+            tr?.replace(R.id.frame, tripFragment!!)?.addToBackStack(null)
             tr?.commit()
         }
-
         return v
     }
 

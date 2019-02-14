@@ -33,7 +33,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/map_back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -69,8 +69,9 @@
 
                     <ImageView
                         android:layout_width="40dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/fromto_icon" />
+                        android:layout_height="60dp"
+                        android:layout_marginTop="12dp"
+                        app:srcCompat="@drawable/fromto" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
