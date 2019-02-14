@@ -10,16 +10,11 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.ListView
 import kz.seruen.Place
-import java.util.*
-
 import kz.seruen.R
 import kz.seruen.Utils.Adapters.PlacesAdapter
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
-import android.view.ViewGroup.LayoutParams.FILL_PARENT
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
-import kotlinx.android.synthetic.main.activity_place.view.*
+
 
 
 class PlacesPageFragment1 : Fragment() {
