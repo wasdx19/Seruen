@@ -7,20 +7,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
-import android.widget.TextView
-import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.activity_places_page1.*
+import kz.seruen.Place
+import java.util.*
 
 import kz.seruen.R
+import kz.seruen.Utils.Adapters.PlacesAdapter
+import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
+import android.view.ViewGroup.LayoutParams.FILL_PARENT
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
+import kotlinx.android.synthetic.main.activity_place.view.*
+
 
 class PlacesPageFragment1 : Fragment() {
 
-    internal var btn_place: Button?=null
-    internal var place_name: TextView?=null
-    internal var place_info: TextView?=null
+    private val placesByType = HashMap<String, ArrayList<Place>>()
+    private var btn_club: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -34,24 +39,145 @@ class PlacesPageFragment1 : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstance: Bundle?): View? {
-
         val view = inflater.inflate(R.layout.activity_places_page1, container, false)
-        btn_place =  view!!.findViewById(R.id.button_clubs)
-        place_name = view!!.findViewById(R.id.textView_top_11)
-        place_info = view!!.findViewById(R.id.textView_bottom_11)
-        btn_place?.setOnClickListener{
-            place_name?.setText("Clubs BHB")
-            place_info?.setText(" 12/5   |   Ave: 12000KZT")
+        btn_club = view!!.findViewById(R.id.button_clubs)
+        btn_club?.setOnClickListener(){
+            loadPlacesData()
+            val listView:ListView = view!!.findViewById(R.id.listView_places)
+            val clubPlaces = getPlacesByType("Clubs")
+            val placesAdapter = PlacesAdapter(clubPlaces, activity!!.applicationContext)
+            listView.adapter = placesAdapter
         }
-
         return view
     }
 
     companion object {
-
         fun newInstance(): PlacesPageFragment1 {
             val fragment = PlacesPageFragment1()
             return fragment
         }
+    }
+
+    fun getPlacesByType(type: String): ArrayList<Place>{
+        val places = placesByType[type]
+        if(places!=null)
+            return places
+        else
+            return ArrayList<Place>()
+    }
+
+    fun loadPlacesData(){
+        addPlacesTypeData(placesByType)
+    }
+
+    fun addPlacesTypeData(placesByType: MutableMap<String, ArrayList<Place>>){
+        val places_list = ArrayList<Place>()
+
+        var place = Place()
+        place.name = "Qwerty"
+        place.info = " 24/7   |    5000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club BhB"
+        place.info = " 12/5   |    1200KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club 888"
+        place.info = " 10/3   |    10000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Qwerty"
+        place.info = " 24/7   |    5000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club BhB"
+        place.info = " 12/5   |    1200KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club 888"
+        place.info = " 10/3   |    10000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Qwerty"
+        place.info = " 24/7   |    5000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club BhB"
+        place.info = " 12/5   |    1200KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club 888"
+        place.info = " 10/3   |    10000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Qwerty"
+        place.info = " 24/7   |    5000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club BhB"
+        place.info = " 12/5   |    1200KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club 888"
+        place.info = " 10/3   |    10000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Qwerty"
+        place.info = " 24/7   |    5000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club BhB"
+        place.info = " 12/5   |    1200KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club 888"
+        place.info = " 10/3   |    10000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Qwerty"
+        place.info = " 24/7   |    5000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club BhB"
+        place.info = " 12/5   |    1200KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club 888"
+        place.info = " 10/3   |    10000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Qwerty"
+        place.info = " 24/7   |    5000KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club BhB"
+        place.info = " 12/5   |    1200KZT"
+        places_list.add(place)
+
+        place = Place()
+        place.name = "Club 888"
+        place.info = " 10/3   |    10000KZT"
+        places_list.add(place)
+
+        placesByType.put("Clubs", places_list)
     }
 }
