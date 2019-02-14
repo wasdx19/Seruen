@@ -18,7 +18,7 @@
         <!--HEADER SECTION-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/gradient2">
 
             <TextView
@@ -26,11 +26,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="3dp"
                 android:fontFamily="@font/fut_med"
-                android:text="Home"
+                android:text="Seruen"
                 android:textColor="@color/colorPrimary"
-                android:textSize="17sp" />
+                android:textSize="20sp" />
         </RelativeLayout>
 
 
@@ -56,6 +57,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="10dp"
+                        android:focusableInTouchMode="true"
                         android:background="@drawable/rounded_angles"
                         android:orientation="vertical"
                         android:padding="10dp">
@@ -91,8 +93,10 @@
                                 android:layout_marginLeft="3dp"
                                 android:ems="9"
                                 android:fontFamily="@font/fut_med"
-                                android:text="Date:"
+                                android:hint="Date:"
+                                android:textColorHint="@color/color979797"
                                 android:textColor="@color/GP_GC_1"
+                                android:singleLine="true"
                                 android:textSize="14dp" />
 
                             <ImageView
@@ -110,7 +114,9 @@
                                 android:layout_marginRight="5dp"
                                 android:ems="10"
                                 android:fontFamily="@font/fut_med"
-                                android:text="Name"
+                                android:hint="Date:"
+                                android:textColorHint="@color/color979797"
+                                android:singleLine="true"
                                 android:textColor="@color/GP_GC_1"
                                 android:textSize="14dp" />
 
@@ -128,7 +134,9 @@
                                 android:layout_marginLeft="3dp"
                                 android:ems="9"
                                 android:fontFamily="@font/fut_med"
-                                android:text="Name"
+                                android:hint="Date:"
+                                android:textColorHint="@color/color979797"
+                                android:singleLine="true"
                                 android:textColor="@color/GP_GC_1"
                                 android:textSize="14dp" />
 
@@ -148,7 +156,9 @@
                                 android:layout_marginRight="5dp"
                                 android:ems="10"
                                 android:fontFamily="@font/fut_med"
-                                android:text="Name"
+                                android:hint="Date:"
+                                android:textColorHint="@color/color979797"
+                                android:singleLine="true"
                                 android:textColor="@color/GP_GC_1"
                                 android:textSize="14dp" />
                         </GridLayout>

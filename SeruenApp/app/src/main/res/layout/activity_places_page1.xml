@@ -9,52 +9,47 @@
     tools:context=".Fragments.PlacesPageFragments.PlacesPageFragment1">
 
         <!--Header-->
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/status_bar"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:background="@drawable/gradient2">
 
-            <TextView
-                android:id="@+id/headerTv"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/fut_med"
-                android:text="Places"
-                android:textColor="@color/colorPrimary"
-                android:textSize="17sp" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="24.5dp"
-                android:layout_marginEnd="10dp"
-                app:srcCompat="@drawable/basket_icon" />
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="3dp">
 
             <EditText
                 android:id="@+id/editText_search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="48dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
                 android:background="@drawable/search_rounded_angles"
                 android:fontFamily="@font/fut_med"
-                android:text="Search"
+                android:singleLine="true"
+                android:hint="Search"
+                android:textColorHint="@color/color979797"
                 android:textAlignment="center"
-                android:textColor="@android:color/darker_gray"
-                android:textSize="16sp" />
+                android:textColor="@color/GP_GC_1"
+                android:textSize="18sp" />
 
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/basket_icon" />
 
-        </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
 
         <!--End Header-->
 
