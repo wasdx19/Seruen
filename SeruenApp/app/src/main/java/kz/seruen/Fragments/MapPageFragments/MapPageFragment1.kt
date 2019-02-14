@@ -36,7 +36,8 @@ class MapPageFragment1 : Fragment() {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
             val tripFragment:Fragment= MapPageFragment2.newInstance()
-            tr?.replace(R.id.frame, tripFragment!!)
+            tr?.setCustomAnimations(R.anim.abc_fade_in, R.anim.abc_fade_out)
+            tr?.replace(R.id.frame, tripFragment!!)?.addToBackStack(null)
             tr?.commit()
         }
 

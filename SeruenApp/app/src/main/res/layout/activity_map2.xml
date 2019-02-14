@@ -35,7 +35,6 @@
                     android:fontFamily="@font/fut_med"
                     android:textSize="20sp" />
 
-
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
@@ -74,8 +73,9 @@
 
                     <ImageView
                         android:layout_width="40dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/fromto_icon" />
+                        android:layout_height="60dp"
+                        android:layout_marginTop="12dp"
+                        app:srcCompat="@drawable/fromto" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
