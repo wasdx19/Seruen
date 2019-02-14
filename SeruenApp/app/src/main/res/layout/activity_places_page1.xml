@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
     tools:context=".Fragments.PlacesPageFragments.PlacesPageFragment1">
-
-    <LinearLayout
-        android:id="@+id/linear_layout_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
         <!--Header-->
         <RelativeLayout
@@ -64,33 +59,32 @@
         <!--End Header-->
 
         <!--Body-->
-        <RelativeLayout
-            android:id="@+id/relative_layout_places"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ScrollView
-                    android:id="@+id/scrollViewPlaces"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
                         android:orientation="horizontal">
 
                         <Button
                             android:id="@+id/button_news"
-                            android:layout_width="55dp"
-                            android:layout_height="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:layout_margin="2dp"
                             android:background="@drawable/rounded_angles"
                             android:fontFamily="@font/fut_med"
@@ -101,8 +95,9 @@
 
                         <Button
                             android:id="@+id/button_events"
-                            android:layout_width="55dp"
-                            android:layout_height="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:layout_margin="2dp"
                             android:background="@drawable/rounded_angles"
                             android:fontFamily="@font/fut_med"
@@ -113,8 +108,9 @@
 
                         <Button
                             android:id="@+id/button_clubs"
-                            android:layout_width="55dp"
-                            android:layout_height="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:layout_margin="2dp"
                             android:background="@drawable/rounded_angles"
                             android:fontFamily="@font/fut_med"
@@ -125,8 +121,9 @@
 
                         <Button
                             android:id="@+id/button_zoo"
-                            android:layout_width="55dp"
-                            android:layout_height="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:layout_margin="2dp"
                             android:background="@drawable/rounded_angles"
                             android:fontFamily="@font/fut_med"
@@ -137,8 +134,9 @@
 
                         <Button
                             android:id="@+id/button_eat"
-                            android:layout_width="55dp"
-                            android:layout_height="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:layout_margin="2dp"
                             android:background="@drawable/rounded_angles"
                             android:fontFamily="@font/fut_med"
@@ -149,8 +147,9 @@
 
                         <Button
                             android:id="@+id/button_bars"
-                            android:layout_width="55dp"
-                            android:layout_height="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:layout_margin="2dp"
                             android:background="@drawable/rounded_angles"
                             android:fontFamily="@font/fut_med"
@@ -161,8 +160,9 @@
 
                         <Button
                             android:id="@+id/button_movie"
-                            android:layout_width="55dp"
-                            android:layout_height="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:layout_margin="3dp"
                             android:background="@drawable/rounded_angles"
                             android:fontFamily="@font/fut_med"
@@ -173,40 +173,21 @@
 
                     </LinearLayout>
 
-                </ScrollView>
+                </RelativeLayout>
+
 
                 <RelativeLayout
-                    android:id="@+id/relative_layout_basket"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent">
 
-                    <ScrollView
-                        android:id="@+id/scrollView"
+                    <ListView
+                        android:id="@+id/listView_places"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:id="@+id/linear_layout_basket"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <ListView
-                                android:id="@+id/listView_places"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-
-                        </LinearLayout>
-
-                    </ScrollView>
+                        android:layout_height="match_parent"/>
 
                 </RelativeLayout>
 
             </LinearLayout>
+     <!--End Body-->
 
-        </RelativeLayout>
-        <!--End Body-->
-
-
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
