@@ -1,9 +1,11 @@
 package kz.seruen.Activities
 
 import android.annotation.SuppressLint
+import android.os.Build
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Button
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
 import kz.seruen.Fragments.ArFragments.ArFragment
@@ -20,6 +22,11 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            val w = window
+            w.addFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN)
+            w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        }
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
