@@ -34,6 +34,4 @@ class CustomPagerAdapter(private val mContext: Context) : PagerAdapter() {
         val customPagerEnum = ModelObject.values()[position]
         return mContext.getString(customPagerEnum.titleResId)
     }
-
-
 }

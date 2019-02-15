@@ -26,8 +26,6 @@ class SettingsPageFragment : Fragment() {
     }
 
     companion object {
-
-
         fun newInstance(): SettingsPageFragment {
             val fragment = SettingsPageFragment()
             return fragment
