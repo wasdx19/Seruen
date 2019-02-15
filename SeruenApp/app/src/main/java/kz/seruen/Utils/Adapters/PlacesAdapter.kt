@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_places_page1.*
 import kz.seruen.Place
 import kz.seruen.R
 

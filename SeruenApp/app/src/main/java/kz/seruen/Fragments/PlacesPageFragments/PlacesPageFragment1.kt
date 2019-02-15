@@ -10,22 +10,19 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.ListView
 import kz.seruen.Place
-import java.util.*
-
 import kz.seruen.R
 import kz.seruen.Utils.Adapters.PlacesAdapter
+import kz.seruen.Utils.Adapters.PlacesButtonAdapter
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
-import android.view.ViewGroup.LayoutParams.FILL_PARENT
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
-import kotlinx.android.synthetic.main.activity_place.view.*
+
 
 
 class PlacesPageFragment1 : Fragment() {
 
     private val placesByType = HashMap<String, ArrayList<Place>>()
-    private var btn_club: Button? = null
+    private var placesTypeList: ArrayList<Place> = ArrayList<Place>()
+    private var btn_type: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -40,14 +37,19 @@ class PlacesPageFragment1 : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstance: Bundle?): View? {
         val view = inflater.inflate(R.layout.activity_places_page1, container, false)
-        btn_club = view!!.findViewById(R.id.button_clubs)
-        btn_club?.setOnClickListener(){
+        val listViewPlacesType:ListView = view!!.findViewById(R.id.listView_places_button)
+        addPlacesTypeData()
+        var placesTypeAdapter:PlacesButtonAdapter = PlacesButtonAdapter(placesTypeList, activity!!.applicationContext)
+        listViewPlacesType.adapter = placesTypeAdapter
+
+        /*btn_type = view!!.findViewById(R.id)
+        btn_type?.setOnClickListener(){
             loadPlacesData()
-            val listView:ListView = view!!.findViewById(R.id.listView_places)
+            val listViewPlaces:ListView = view!!.findViewById(R.id.listView_places)
             val clubPlaces = getPlacesByType("Clubs")
             val placesAdapter = PlacesAdapter(clubPlaces, activity!!.applicationContext)
-            listView.adapter = placesAdapter
-        }
+            listViewPlaces.adapter = placesAdapter
+        }*/
         return view
     }
 
@@ -74,110 +76,48 @@ class PlacesPageFragment1 : Fragment() {
         val places_list = ArrayList<Place>()
 
         var place = Place()
-        place.name = "Qwerty"
-        place.info = " 24/7   |    5000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club BhB"
-        place.info = " 12/5   |    1200KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club 888"
-        place.info = " 10/3   |    10000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Qwerty"
-        place.info = " 24/7   |    5000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club BhB"
-        place.info = " 12/5   |    1200KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club 888"
-        place.info = " 10/3   |    10000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Qwerty"
-        place.info = " 24/7   |    5000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club BhB"
-        place.info = " 12/5   |    1200KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club 888"
-        place.info = " 10/3   |    10000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Qwerty"
-        place.info = " 24/7   |    5000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club BhB"
-        place.info = " 12/5   |    1200KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club 888"
-        place.info = " 10/3   |    10000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Qwerty"
-        place.info = " 24/7   |    5000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club BhB"
-        place.info = " 12/5   |    1200KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club 888"
-        place.info = " 10/3   |    10000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Qwerty"
-        place.info = " 24/7   |    5000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club BhB"
-        place.info = " 12/5   |    1200KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club 888"
-        place.info = " 10/3   |    10000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Qwerty"
-        place.info = " 24/7   |    5000KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club BhB"
-        place.info = " 12/5   |    1200KZT"
-        places_list.add(place)
-
-        place = Place()
-        place.name = "Club 888"
-        place.info = " 10/3   |    10000KZT"
-        places_list.add(place)
+        for(i in 1..20){
+            place = Place()
+            place.name = "Club" + i.toString()
+            place.info = " " + i.toString() + "/" + (i%7+1).toString() + "    |    " + (i*1000).toString() + "KZT"
+            places_list.add(place)
+        }
 
         placesByType.put("Clubs", places_list)
+    }
+
+    fun addPlacesTypeData(){
+        var place = Place()
+        place.type = "News"
+        placesTypeList.add(place)
+
+        place = Place()
+        place.type = "Eat"
+        placesTypeList.add(place)
+
+        place = Place()
+        place.type = "Movie"
+        placesTypeList.add(place)
+
+        place = Place()
+        place.type = "Bar"
+        placesTypeList.add(place)
+
+        place = Place()
+        place.type = "Club"
+        placesTypeList.add(place)
+
+        place = Place()
+        place.type = "Nature"
+        placesTypeList.add(place)
+
+        place = Place()
+        place.type = "Fitness"
+        placesTypeList.add(place)
+
+        place = Place()
+        place.type = "Zoo"
+        placesTypeList.add(place)
+
     }
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/places_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/places_button_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:background="@drawable/rounded_angles"
+        android:fontFamily="@font/fut_med"
+        android:text="Button"
+        android:textAlignment="center"
+        android:textColor="@color/GP_GC_1"
+        android:textSize="10sp" />
+
+</RelativeLayout>
