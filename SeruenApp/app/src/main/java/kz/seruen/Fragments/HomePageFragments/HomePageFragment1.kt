@@ -35,9 +35,9 @@ class HomePageFragment1 : Fragment() {
         return inflater.inflate(R.layout.activity_main_page1, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initialize(view)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        initialize()
 
         btn_trip?.setOnClickListener {
             val fragmentManager:FragmentManager?=fragmentActivity?.supportFragmentManager
@@ -49,8 +49,8 @@ class HomePageFragment1 : Fragment() {
         }
     }
 
-    fun initialize(view: View){
-        btn_trip=view.findViewById(R.id.bex_trip)
+    fun initialize(){
+        btn_trip=view?.findViewById(R.id.bex_trip)
         fragmentActivity=activity
     }
 

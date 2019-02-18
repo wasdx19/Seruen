@@ -33,9 +33,9 @@ class MapPageFragment2 : Fragment() {
         return inflater.inflate(R.layout.activity_map2,container,false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initialize(view)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        initialize()
 
         mapBackButton?.setOnClickListener {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
@@ -47,8 +47,8 @@ class MapPageFragment2 : Fragment() {
         }
     }
 
-    fun initialize(view : View){
-        mapBackButton=view.findViewById(R.id.map_back_btn)
+    fun initialize(){
+        mapBackButton=view?.findViewById(R.id.map_back_btn)
         fragmentActivity=activity
     }
 
