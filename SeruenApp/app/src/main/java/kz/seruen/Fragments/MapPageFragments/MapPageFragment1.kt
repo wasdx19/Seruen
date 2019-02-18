@@ -32,9 +32,9 @@ class MapPageFragment1 : Fragment() {
         return inflater.inflate(R.layout.activity_map1, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initialize(view)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        initialize()
 
         mapTripButton?.setOnClickListener {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
@@ -46,13 +46,12 @@ class MapPageFragment1 : Fragment() {
         }
     }
 
-    fun initialize(view:View){
-        mapTripButton=view.findViewById(R.id.button_trip)
+    fun initialize(){
+        mapTripButton=view?.findViewById(R.id.button_trip)
         fragmentActivity=activity
     }
 
     companion object {
-
         fun newInstance(): MapPageFragment1 {
             val fragment = MapPageFragment1()
             return fragment

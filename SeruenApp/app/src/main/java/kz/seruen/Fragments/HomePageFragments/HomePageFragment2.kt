@@ -34,9 +34,9 @@ class HomePageFragment2 : Fragment() {
         return inflater.inflate(R.layout.activity_main_page2,container,false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initialize(view)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        initialize()
 
         backButton?.setOnClickListener {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
@@ -48,8 +48,8 @@ class HomePageFragment2 : Fragment() {
         }
     }
 
-    fun initialize(view:View){
-        backButton=view.findViewById(R.id.backButton)
+    fun initialize(){
+        backButton=view?.findViewById(R.id.backButton)
         fragmentActivity=activity
     }
 
