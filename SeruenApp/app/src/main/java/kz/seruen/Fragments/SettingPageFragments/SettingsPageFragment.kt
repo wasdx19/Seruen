@@ -25,6 +25,8 @@ class SettingsPageFragment : Fragment() {
         return inflater.inflate(R.layout.activity_settings, container, false)
     }
 
+
+
     companion object {
         fun newInstance(): SettingsPageFragment {
             val fragment = SettingsPageFragment()
