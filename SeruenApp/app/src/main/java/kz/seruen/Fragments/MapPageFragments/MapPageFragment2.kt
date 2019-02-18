@@ -17,8 +17,9 @@ import android.widget.ImageView
 import kz.seruen.R
 
 class MapPageFragment2 : Fragment() {
-
     var mapBackButton: ImageView?=null
+    var fragmentActivity:FragmentActivity?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             val w = activity!!.window
@@ -29,10 +30,13 @@ class MapPageFragment2 : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view:View=inflater.inflate(R.layout.activity_map2,container,false)
-        val fragmentActivity: FragmentActivity?=activity
+        return inflater.inflate(R.layout.activity_map2,container,false)
+    }
 
-        mapBackButton= view!!.findViewById(R.id.map_back_btn)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initialize(view)
+
         mapBackButton?.setOnClickListener {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
@@ -41,8 +45,11 @@ class MapPageFragment2 : Fragment() {
             tr?.replace(R.id.frame, tripFragment!!)?.addToBackStack(null)
             tr?.commit()
         }
+    }
 
-        return view
+    fun initialize(view : View){
+        mapBackButton=view.findViewById(R.id.map_back_btn)
+        fragmentActivity=activity
     }
 
     companion object {
