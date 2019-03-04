@@ -10,7 +10,6 @@ import android.widget.Button
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
 import kz.seruen.Fragments.ArFragments.ArFragment
 import kz.seruen.Fragments.HomePageFragments.HomePageFragment1
-import kz.seruen.Fragments.HomePageFragments.HomePageFragment2
 import kz.seruen.Fragments.MapPageFragments.MapPageFragment1
 import kz.seruen.Fragments.PlacesPageFragments.PlacesPageFragment1
 import kz.seruen.R
@@ -56,13 +55,6 @@ class MainActivity : AppCompatActivity() {
         val tr1 = supportFragmentManager.beginTransaction()
         tr1.replace(R.id.frame, HomePageFragment1.newInstance())
         tr1.commit()
-
-        tripBtn?.setOnClickListener {
-            var selectedFragment= HomePageFragment2.newInstance()
-            val tr = supportFragmentManager?.beginTransaction()
-            tr?.replace(R.id.frame, selectedFragment)
-            tr?.commit()
-        }
     }
 
 

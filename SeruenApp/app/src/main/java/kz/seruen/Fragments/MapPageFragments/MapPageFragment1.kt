@@ -10,8 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.Button
-import kz.seruen.Fragments.HomePageFragments.HomePageFragment2
-
 import kz.seruen.R
 
 class MapPageFragment1 : Fragment() {
