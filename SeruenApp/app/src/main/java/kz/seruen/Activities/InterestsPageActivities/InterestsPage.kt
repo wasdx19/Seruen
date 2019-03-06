@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
 import android.widget.Button
+import kotlinx.android.synthetic.main.activity_interests_page.*
 
 import kz.seruen.Activities.MainActivity
 import kz.seruen.R
@@ -20,7 +21,8 @@ class InterestsPage : AppCompatActivity() {
         }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_interests_page)
-
+        val strUser: String = intent.getStringExtra("user_login")
+        val strPassword: String = intent.getStringExtra("user_password")
         skip = findViewById(R.id.button_ok)
         skip.setOnClickListener {
             val intent = Intent(this@InterestsPage, MainActivity::class.java)
