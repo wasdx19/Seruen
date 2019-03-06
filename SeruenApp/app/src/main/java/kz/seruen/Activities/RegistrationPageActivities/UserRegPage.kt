@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
 import android.widget.ImageButton
 import kz.seruen.Activities.InterestsPageActivities.InterestsPage
+import kz.seruen.Activities.LoginActivity
 import kz.seruen.R
 
 class UserRegPage : AppCompatActivity() {
@@ -20,9 +21,9 @@ class UserRegPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_reg_page)
 
-        skip = findViewById(R.id.facebook_btn)
+        skip = findViewById(R.id.google_btn)
         skip.setOnClickListener {
-            val intent = Intent(this@UserRegPage, InterestsPage::class.java)
+            val intent = Intent(this@UserRegPage, LoginActivity::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }

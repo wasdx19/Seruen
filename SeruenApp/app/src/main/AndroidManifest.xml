@@ -21,25 +21,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage2"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage3"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name="kz.seruen.Activities.RegistrationPageActivities.UserRegPage"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name="kz.seruen.Activities.InterestsPageActivities.InterestsPage"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name="kz.seruen.Activities.MainActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage1"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage2" />
+        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage3" />
+        <activity android:name="kz.seruen.Activities.RegistrationPageActivities.UserRegPage" />
+        <activity android:name="kz.seruen.Activities.InterestsPageActivities.InterestsPage" />
+        <activity android:name="kz.seruen.Activities.MainActivity" />
+        <activity android:name="kz.seruen.Activities.LoginActivity" />
+        <activity android:name="kz.seruen.Fragments.PlacesPageFragments.PlacesPageFragment2" />
+        <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage1"/>
     </application>
 </manifest>
 
