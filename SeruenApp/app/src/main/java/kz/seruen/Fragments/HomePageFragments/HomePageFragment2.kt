@@ -16,8 +16,9 @@ import android.widget.TextView
 import kz.seruen.R
 
 class HomePageFragment2 : Fragment() {
+    internal var backButton: ImageView?=null
+    internal var fragmentActivity:FragmentActivity?=null
 
-    internal var back: ImageView?=null
 
     @SuppressLint("MissingSuperCall")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,11 +31,14 @@ class HomePageFragment2 : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var view= inflater.inflate(R.layout.activity_main_page2,container,false)
-        val fragmentActivity: FragmentActivity?=activity
+        return inflater.inflate(R.layout.activity_main_page2,container,false)
+    }
 
-        back= view!!.findViewById(R.id.backButton)
-        back?.setOnClickListener {
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        initialize()
+
+        backButton?.setOnClickListener {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
             val tripFragment:Fragment=HomePageFragment1.newInstance()
@@ -42,9 +46,11 @@ class HomePageFragment2 : Fragment() {
             tr?.replace(R.id.frame, tripFragment!!)
             tr?.commit()
         }
+    }
 
-
-        return view
+    fun initialize(){
+        backButton=view?.findViewById(R.id.backButton)
+        fragmentActivity=activity
     }
 
     companion object {

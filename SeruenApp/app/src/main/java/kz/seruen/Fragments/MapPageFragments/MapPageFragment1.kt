@@ -16,6 +16,7 @@ import kz.seruen.R
 
 class MapPageFragment1 : Fragment() {
 
+    var fragmentActivity: FragmentActivity?=null
     var mapTripButton: Button?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,10 +29,13 @@ class MapPageFragment1 : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstance: Bundle?): View? {
-        val view:View=inflater.inflate(R.layout.activity_map1, container, false)
-        val fragmentActivity: FragmentActivity?=activity
+        return inflater.inflate(R.layout.activity_map1, container, false)
+    }
 
-        mapTripButton= view!!.findViewById(R.id.button_trip)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        initialize()
+
         mapTripButton?.setOnClickListener {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
@@ -40,12 +44,14 @@ class MapPageFragment1 : Fragment() {
             tr?.replace(R.id.frame, tripFragment!!)?.addToBackStack(null)
             tr?.commit()
         }
+    }
 
-        return view
+    fun initialize(){
+        mapTripButton=view?.findViewById(R.id.button_trip)
+        fragmentActivity=activity
     }
 
     companion object {
-
         fun newInstance(): MapPageFragment1 {
             val fragment = MapPageFragment1()
             return fragment

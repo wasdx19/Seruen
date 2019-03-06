@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_main_page2.*
 import kz.seruen.R
 
 class HomePageFragment1 : Fragment() {
-
+    internal var fragmentActivity:FragmentActivity?=null
     internal var btn_trip: Button?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,12 +32,14 @@ class HomePageFragment1 : Fragment() {
 
     @SuppressLint("ResourceType")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstance: Bundle?): View? {
-        val v=inflater.inflate(R.layout.activity_main_page1, container, false)
-        val fragmentActivity: FragmentActivity?=activity
+        return inflater.inflate(R.layout.activity_main_page1, container, false)
+    }
 
-        btn_trip= v!!.findViewById(R.id.bex_trip)
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        initialize()
+
         btn_trip?.setOnClickListener {
-
             val fragmentManager:FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
             val tripFragment:Fragment=HomePageFragment2.newInstance()
@@ -45,11 +47,14 @@ class HomePageFragment1 : Fragment() {
             tr?.replace(R.id.frame, tripFragment!!)?.addToBackStack(null)
             tr?.commit()
         }
-        return v
+    }
+
+    fun initialize(){
+        btn_trip=view?.findViewById(R.id.bex_trip)
+        fragmentActivity=activity
     }
 
     companion object {
-
         fun newInstance(): HomePageFragment1 {
             val fragment = HomePageFragment1()
             return fragment
