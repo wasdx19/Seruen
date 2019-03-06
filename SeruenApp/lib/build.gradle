@@ -5,7 +5,8 @@ dependencies {
     compile group: 'com.romandanylyk', name: 'pageindicatorview', version: '1.0.1'
 
     compile 'me.anwarshahriar:calligrapher:1.0'
-
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.30.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
 }
 
 sourceCompatibility = "7"

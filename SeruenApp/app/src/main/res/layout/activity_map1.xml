@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.MapPageFragments.MapPageFragment1">
 
     <LinearLayout
@@ -45,6 +45,19 @@
             android:id="@+id/relative_layout_map"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                mapbox:mapbox_cameraTargetLat="43.238949"
+                mapbox:mapbox_cameraTargetLng="76.889709"
+                mapbox:mapbox_cameraZoom="10"
+                mapbox:mapbox_cameraZoomMax="15"
+                mapbox:mapbox_cameraZoomMin="5"
+                mapbox:mapbox_uiRotateGestures="false"
+                mapbox:mapbox_uiLogo="false"
+                mapbox:mapbox_uiAttribution="false"/>
 
             <Button
                 android:id="@+id/button_trip"

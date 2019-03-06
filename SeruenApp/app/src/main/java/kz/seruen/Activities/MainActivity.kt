@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Button
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+import com.mapbox.mapboxsdk.Mapbox
 import kz.seruen.Fragments.ArFragments.ArFragment
 import kz.seruen.Fragments.HomePageFragments.HomePageFragment1
 import kz.seruen.Fragments.HomePageFragments.HomePageFragment2
@@ -16,8 +17,7 @@ import kz.seruen.Fragments.PlacesPageFragments.PlacesPageFragment1
 import kz.seruen.R
 import kz.seruen.Fragments.SettingPageFragments.SettingsPageFragment
 
-class MainActivity : AppCompatActivity() {
-
+class MainActivity : AppCompatActivity(){
     internal var tripBtn: Button?=null
 
     @SuppressLint("ResourceType")
@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         botNav?.enableShiftingMode(true)
         botNav?.enableItemShiftingMode(false)
 
+        Mapbox.getInstance(this,getString(R.string.mapbox_access_token))
         tripBtn=findViewById(R.id.bex_trip)
 
         botNav?.setOnNavigationItemSelectedListener { menuItem ->
@@ -64,7 +65,6 @@ class MainActivity : AppCompatActivity() {
             tr?.commit()
         }
     }
-
 
     override fun onBackPressed() {
         super.onBackPressed()
