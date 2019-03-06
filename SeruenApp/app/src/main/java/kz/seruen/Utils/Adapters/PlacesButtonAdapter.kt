@@ -42,4 +42,6 @@ class PlacesButtonAdapter(items: ArrayList<Place>, ctx: Context): ArrayAdapter<P
         return view
     }
 
+
+
 }
