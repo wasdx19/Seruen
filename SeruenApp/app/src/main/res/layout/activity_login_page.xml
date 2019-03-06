@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Activities.GuidePageActivities.GuidePage1">
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="153dp"
+        android:textSize="28sp"
+        android:textColor="@color/GP_GC_2"/>
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/rounded_angles"
+        android:fontFamily="@font/fut_med"
+        android:hint="Login"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/GP_GC_1"
+        android:textColorHint="@color/color979797"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-54dp"
+        android:background="@drawable/rounded_angles"
+        android:fontFamily="@font/fut_med"
+        android:hint="Password"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/GP_GC_1"
+        android:textColorHint="@color/color979797"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="end"
+        android:layout_marginBottom="-68dp"
+        android:background="@drawable/rounded_angles"
+        android:fontFamily="@font/fut_med"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/GP_GC_1"
+        android:textSize="12sp" />
+
+
+
+</RelativeLayout>

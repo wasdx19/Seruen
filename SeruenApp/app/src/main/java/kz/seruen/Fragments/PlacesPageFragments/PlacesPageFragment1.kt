@@ -7,8 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
-import android.widget.Button
-import android.widget.ListView
+import android.widget.*
 import kz.seruen.Place
 import kz.seruen.R
 import kz.seruen.Utils.Adapters.PlacesAdapter
@@ -39,9 +38,18 @@ class PlacesPageFragment1 : Fragment() {
         val view = inflater.inflate(R.layout.activity_places_page1, container, false)
         val listViewPlacesType:ListView = view!!.findViewById(R.id.listView_places_button)
         addPlacesTypeData()
-        var placesTypeAdapter:PlacesButtonAdapter = PlacesButtonAdapter(placesTypeList, activity!!.applicationContext)
-        listViewPlacesType.adapter = placesTypeAdapter
 
+        var img_basket:ImageView = view.findViewById(R.id.image_basket)
+        img_basket.setOnClickListener {
+            Toast.makeText(activity?.applicationContext, "Clicked", Toast.LENGTH_SHORT).show()
+            start()
+        }
+
+        var placesTypeAdapter:PlacesButtonAdapter = PlacesButtonAdapter(placesTypeList,activity!!.applicationContext)
+        listViewPlacesType.adapter = placesTypeAdapter
+        listViewPlacesType.onItemClickListener=AdapterView.OnItemClickListener{adapterView,view,position:Int,id:Long->
+            Toast.makeText(activity, "Click on ", Toast.LENGTH_SHORT).show()
+        }
         /*btn_type = view!!.findViewById(R.id)
         btn_type?.setOnClickListener(){
             loadPlacesData()
@@ -119,5 +127,13 @@ class PlacesPageFragment1 : Fragment() {
         place.type = "Zoo"
         placesTypeList.add(place)
 
+    }
+
+    fun start(){
+        loadPlacesData()
+        val listViewPlaces:ListView = view!!.findViewById(R.id.listView_places)
+        val clubPlaces = getPlacesByType("Clubs")
+        val placesAdapter = PlacesAdapter(clubPlaces, activity!!.applicationContext)
+        listViewPlaces.adapter = placesAdapter
     }
 }
