@@ -26,7 +26,6 @@
         <activity android:name="kz.seruen.Activities.MainActivity" />
         <activity android:name="kz.seruen.Activities.LoginActivity" />
         <activity android:name="kz.seruen.Fragments.PlacesPageFragments.PlacesPageFragment2" />
-        <activity android:name="kz.seruen.Fragments.MapPageFragments.MapPageFragment2" />
         <activity android:name="kz.seruen.Activities.GuidePageActivities.GuidePage1"/>
     </application>
 </manifest>
