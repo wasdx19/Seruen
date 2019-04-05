@@ -63,24 +63,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <LinearLayout
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/listView_places_button"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:gravity="center_horizontal"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:orientation="horizontal">
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
 
-                        <ListView
-                            android:id="@+id/listView_places_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                        </ListView>
-
-                    </LinearLayout>
+                    </android.support.v7.widget.RecyclerView>
 
 <!--                            <ListView
                                 android:id="@+id/listView_places_button"
