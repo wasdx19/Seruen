@@ -20,6 +20,7 @@ import com.mapbox.mapboxsdk.maps.MapboxMap
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
 import com.mapbox.mapboxsdk.maps.Style
 import com.mapbox.mapboxsdk.plugins.locationlayer.LocationLayerPlugin
+
 import kz.seruen.R
 
 class MapPageFragment1 : Fragment(), OnMapReadyCallback,LocationListener, PermissionsListener {
