@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".Activities.LoginActivity">
+    tools:context=".Activities.SignUpActivity">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginTop="10dp"
         android:gravity="center_vertical|center_horizontal"
         android:padding="10dp">
 
@@ -44,7 +45,7 @@
             android:layout_marginTop="40dp">
 
             <EditText
-                android:id="@+id/loginField"
+                android:id="@+id/sloginField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -53,11 +54,29 @@
                 android:inputType="textEmailAddress" />
 
             <EditText
-                android:id="@+id/passwordField"
+                android:id="@+id/nameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Name"
+                android:ems="10"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/spasswordField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Password"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/passwordCheckField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Password again"
                 android:ems="10"
                 android:inputType="textPassword" />
 
@@ -89,16 +108,6 @@
                     android:background="@color/GP_GC_1"
                     app:srcCompat="@drawable/googleg_standard_color_18" />
             </LinearLayout>
-
-            <Button
-                android:id="@+id/button_signIn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sign In"
-                android:textColor="@color/GP_GC_1"
-                android:fontFamily="@font/fut_med"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/rounded_angles"/>
 
             <Button
                 android:id="@+id/button_signUp"

@@ -10,6 +10,7 @@ import android.support.v4.view.PagerAdapter
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
+import kz.seruen.Activities.InterestsPageActivities.InterestsPage
 
 
 import kz.seruen.Utils.Adapters.CustomPagerAdapter
@@ -60,13 +61,13 @@ class GuidePageSlider : AppCompatActivity() {
 
         })
         skip.setOnClickListener {
-            val intent = Intent(this@GuidePageSlider, UserRegPage::class.java)
+            val intent = Intent(this@GuidePageSlider, InterestsPage::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
 
         get_start.setOnClickListener {
-            val intent = Intent(this@GuidePageSlider, UserRegPage::class.java)
+            val intent = Intent(this@GuidePageSlider, InterestsPage::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
