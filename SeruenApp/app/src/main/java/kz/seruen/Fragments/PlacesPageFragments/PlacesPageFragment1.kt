@@ -1,15 +1,21 @@
 package kz.seruen.Fragments.PlacesPageFragments
 
+import android.graphics.Bitmap
 import android.os.Build
 import android.support.v4.app.Fragment
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.OrientationHelper
+import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.*
+import kotlinx.android.synthetic.main.activity_place.*
 import kz.seruen.Place
 import kz.seruen.R
+import kz.seruen.Services.RecyclerItemClickListener
 import kz.seruen.Utils.Adapters.PlacesAdapter
 import kz.seruen.Utils.Adapters.PlacesButtonAdapter
 import kotlin.collections.ArrayList
@@ -20,7 +26,7 @@ import kotlin.collections.HashMap
 class PlacesPageFragment1 : Fragment() {
 
     private val placesByType = HashMap<String, ArrayList<Place>>()
-    private var placesTypeList: ArrayList<Place> = ArrayList<Place>()
+    private var placesTypeList: ArrayList<String> = ArrayList<String>()
     private var btn_type: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,26 +36,34 @@ class PlacesPageFragment1 : Fragment() {
             w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         }
         super.onCreate(savedInstanceState)
-
-
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstance: Bundle?): View? {
         val view = inflater.inflate(R.layout.activity_places_page1, container, false)
-        val listViewPlacesType:ListView = view!!.findViewById(R.id.listView_places_button)
-        addPlacesTypeData()
 
-        var img_basket:ImageView = view.findViewById(R.id.image_basket)
+/*        var img_basket:ImageView = view.findViewById(R.id.image_basket)
         img_basket.setOnClickListener {
             Toast.makeText(activity?.applicationContext, "Clicked", Toast.LENGTH_SHORT).show()
             start()
-        }
+        }*/
+        loadPlacesData()
+        val listViewPlaces:ListView = view!!.findViewById(R.id.listView_places)
+        val clubPlaces = getPlacesByType("Clubs")
+        val placesAdapter = PlacesAdapter(clubPlaces, activity!!.applicationContext)
+        listViewPlaces.adapter = placesAdapter
+        addPlacesTypeData()
+        val ll : RecyclerView = view.findViewById(R.id.listView_places_button)
+        ll!!.layoutManager = LinearLayoutManager(activity!!.applicationContext, OrientationHelper.HORIZONTAL, false)
+        ll!!.adapter = PlacesButtonAdapter(placesTypeList)
 
-        var placesTypeAdapter:PlacesButtonAdapter = PlacesButtonAdapter(placesTypeList,activity!!.applicationContext)
-        listViewPlacesType.adapter = placesTypeAdapter
-        listViewPlacesType.onItemClickListener=AdapterView.OnItemClickListener{adapterView,view,position:Int,id:Long->
-            Toast.makeText(activity, "Click on ", Toast.LENGTH_SHORT).show()
-        }
+        ll!!.addOnItemTouchListener(
+                RecyclerItemClickListener(this!!.activity!!, object : RecyclerItemClickListener.OnItemClickListener {
+                    override fun onItemClick(view: View, position: Int) {
+                        Toast.makeText(activity?.applicationContext, "Clicked "+position, Toast.LENGTH_SHORT).show()
+                        start()
+                    }
+                })
+        )
         /*btn_type = view!!.findViewById(R.id)
         btn_type?.setOnClickListener(){
             loadPlacesData()
@@ -86,7 +100,7 @@ class PlacesPageFragment1 : Fragment() {
         var place = Place()
         for(i in 1..20){
             place = Place()
-            place.name = "Club" + i.toString()
+            place.name = "Showplace" + i.toString()
             place.info = " " + i.toString() + "/" + (i%7+1).toString() + "    |    " + (i*1000).toString() + "KZT"
             places_list.add(place)
         }
@@ -95,38 +109,14 @@ class PlacesPageFragment1 : Fragment() {
     }
 
     fun addPlacesTypeData(){
-        var place = Place()
-        place.type = "News"
-        placesTypeList.add(place)
-
-        place = Place()
-        place.type = "Eat"
-        placesTypeList.add(place)
-
-        place = Place()
-        place.type = "Movie"
-        placesTypeList.add(place)
-
-        place = Place()
-        place.type = "Bar"
-        placesTypeList.add(place)
-
-        place = Place()
-        place.type = "Club"
-        placesTypeList.add(place)
-
-        place = Place()
-        place.type = "Nature"
-        placesTypeList.add(place)
-
-        place = Place()
-        place.type = "Fitness"
-        placesTypeList.add(place)
-
-        place = Place()
-        place.type = "Zoo"
-        placesTypeList.add(place)
-
+        placesTypeList.add("Showplaces")
+        placesTypeList.add("News")
+        placesTypeList.add("Movie")
+        placesTypeList.add("Bar")
+        placesTypeList.add("Club")
+        placesTypeList.add("Nature")
+        placesTypeList.add("Fitness")
+        placesTypeList.add("Zoo")
     }
 
     fun start(){
@@ -136,4 +126,5 @@ class PlacesPageFragment1 : Fragment() {
         val placesAdapter = PlacesAdapter(clubPlaces, activity!!.applicationContext)
         listViewPlaces.adapter = placesAdapter
     }
+
 }
