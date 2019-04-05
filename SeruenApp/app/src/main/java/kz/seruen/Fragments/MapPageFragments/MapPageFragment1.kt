@@ -12,10 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.Button
-<<<<<<< HEAD
-=======
 import com.mapbox.android.core.location.LocationEngine
-import com.mapbox.android.core.location.LocationEngineProvider
 import com.mapbox.android.core.permissions.PermissionsListener
 import com.mapbox.android.core.permissions.PermissionsManager
 import com.mapbox.mapboxsdk.maps.MapView
@@ -24,18 +21,17 @@ import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
 import com.mapbox.mapboxsdk.maps.Style
 import com.mapbox.mapboxsdk.plugins.locationlayer.LocationLayerPlugin
 
->>>>>>> 0eb89bf29853d0518222277d33373027ce947d79
 import kz.seruen.R
 
-class MapPageFragment1 : Fragment(), OnMapReadyCallback,LocationListener,PermissionsListener {
+class MapPageFragment1 : Fragment(), OnMapReadyCallback,LocationListener, PermissionsListener {
 
     private var fragmentActivity: FragmentActivity?=null
     private var mapTripButton: Button?=null
     private var mapView: MapView?=null
     private var map: MapboxMap?=null
-    private var permissionsManager:PermissionsManager?=null
-    private var locationEngine:LocationEngine?=null
-    private var locationLayerPlugin:LocationLayerPlugin?=null
+    private var permissionsManager: PermissionsManager?=null
+    private var locationEngine: LocationEngine?=null
+    private var locationLayerPlugin: LocationLayerPlugin?=null
     private var location:Location?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
