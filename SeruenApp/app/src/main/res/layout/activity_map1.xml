@@ -52,12 +52,13 @@
                 android:layout_height="match_parent"
                 mapbox:mapbox_cameraTargetLat="43.238949"
                 mapbox:mapbox_cameraTargetLng="76.889709"
-                mapbox:mapbox_cameraZoom="10"
+                mapbox:mapbox_cameraZoom="12"
                 mapbox:mapbox_cameraZoomMax="15"
                 mapbox:mapbox_cameraZoomMin="5"
-                mapbox:mapbox_uiRotateGestures="false"
+                mapbox:mapbox_uiRotateGestures="true"
                 mapbox:mapbox_uiLogo="false"
-                mapbox:mapbox_uiAttribution="false"/>
+                mapbox:mapbox_uiAttribution="false"
+                mapbox:mapbox_uiCompass="false"/>
 
             <Button
                 android:id="@+id/button_trip"
