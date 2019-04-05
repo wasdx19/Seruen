@@ -41,14 +41,11 @@ dependencies {
     implementation 'com.android.support:gridlayout-v7:28.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.2'
-<<<<<<< HEAD
     implementation 'com.android.support:cardview-v7:28.0.+'
-=======
     implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:7.2.0') {
         exclude group: 'group_name', module: 'module_name'
     }
     implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.11.0'
->>>>>>> 7f459df8070af4fceb8a930a6830e8831ed5df91
 }
 repositories {
     mavenCentral()
