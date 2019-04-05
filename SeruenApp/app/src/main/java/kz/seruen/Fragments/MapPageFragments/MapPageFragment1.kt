@@ -1,7 +1,7 @@
 package kz.seruen.Fragments.MapPageFragments
 
-import android.annotation.SuppressLint
 import android.location.Location
+import android.location.LocationListener
 import android.os.Build
 import android.support.v4.app.Fragment
 import android.os.Bundle
@@ -18,34 +18,25 @@ import com.mapbox.android.core.location.LocationEngine
 import com.mapbox.android.core.location.LocationEngineProvider
 import com.mapbox.android.core.permissions.PermissionsListener
 import com.mapbox.android.core.permissions.PermissionsManager
-import com.mapbox.mapboxsdk.Mapbox
-import com.mapbox.mapboxsdk.location.LocationComponent
-import com.mapbox.mapboxsdk.location.modes.CameraMode
-import com.mapbox.mapboxsdk.location.modes.RenderMode
 import com.mapbox.mapboxsdk.maps.MapView
 import com.mapbox.mapboxsdk.maps.MapboxMap
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
 import com.mapbox.mapboxsdk.maps.Style
-import kz.seruen.Fragments.HomePageFragments.HomePageFragment2
+import com.mapbox.mapboxsdk.plugins.locationlayer.LocationLayerPlugin
 
 >>>>>>> 0eb89bf29853d0518222277d33373027ce947d79
 import kz.seruen.R
 
-class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback {
-    val REQUEST_CHECK_SETTINGS = 1
+class MapPageFragment1 : Fragment(), OnMapReadyCallback,LocationListener,PermissionsListener {
 
-    lateinit var map: MapboxMap
-    lateinit var permissionManager: PermissionsManager
-    var originLocation: Location? = null
-
-    var locationEngine: LocationEngine? = null
-    var locationComponent: LocationComponent? = null
-
-    var fragmentActivity: FragmentActivity?=null
-    var mapTripButton: Button?=null
-    var mapView: MapView?=null
-    var permissionsManager:PermissionsManager?=null
-    var mapboxMap:MapboxMap?=null
+    private var fragmentActivity: FragmentActivity?=null
+    private var mapTripButton: Button?=null
+    private var mapView: MapView?=null
+    private var map: MapboxMap?=null
+    private var permissionsManager:PermissionsManager?=null
+    private var locationEngine:LocationEngine?=null
+    private var locationLayerPlugin:LocationLayerPlugin?=null
+    private var location:Location?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -81,15 +72,92 @@ class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback {
         }
     }
 
+    fun initialize(){
+        mapTripButton=view?.findViewById(R.id.button_trip)
+        fragmentActivity=activity
+        mapView=view?.findViewById(R.id.mapView)
+    }
+
+    override fun onMapReady(mapboxMap: MapboxMap) {
+        map=mapboxMap
+        enableLocation()
+    }
+
+    private fun enableLocation(){
+        if(PermissionsManager.areLocationPermissionsGranted(context)){
+            initializeLocationEngine()
+            initializeLocationLayer()
+        }else{
+            permissionsManager= PermissionsManager(this)
+            permissionsManager!!.requestLocationPermissions(activity)
+        }
+    }
+
+    private fun initializeLocationEngine(){
+
+    }
+
+    private fun initializeLocationLayer(){
+        locationLayerPlugin = LocationLayerPlugin(mapView!!, map!!)
+        locationLayerPlugin = LocationLayerPlugin(mapView!!, map!!, locationEngine)
+
+    }
+
+    override fun onLocationChanged(p0: Location?) {
+    }
+
+    override fun onStatusChanged(p0: String?, p1: Int, p2: Bundle?) {
+    }
+
+    override fun onProviderEnabled(p0: String?) {
+    }
+
+    override fun onProviderDisabled(p0: String?) {
+    }
+
+    override fun onExplanationNeeded(permissionsToExplain: MutableList<String>?) {
+    }
+
+    override fun onPermissionResult(granted: Boolean) {
+        if(granted){
+            enableLocation()
+        }
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+    }
+
+
     override fun onStart() {
         super.onStart()
         mapView?.onStart()
     }
 
-    fun initialize(){
-        mapTripButton=view?.findViewById(R.id.button_trip)
-        fragmentActivity=activity
-        mapView=view?.findViewById(R.id.mapView)
+    override fun onResume() {
+        super.onResume()
+        mapView?.onResume()
+    }
+
+    override fun onPause(){
+        super.onPause()
+        mapView?.onPause()
+    }
+
+    override fun onStop(){
+        super.onStop()
+        mapView?.onStop()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        mapView?.onSaveInstanceState(outState)
+    }
+
+    override fun onLowMemory() {
+        super.onLowMemory()
+        mapView?.onLowMemory()
     }
 
     override fun onDestroyView() {
@@ -102,32 +170,5 @@ class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback {
             val fragment = MapPageFragment1()
             return fragment
         }
-    }
-
-    fun enableLocation() {
-
-    }
-
-    @SuppressWarnings("MissingPermission")
-    fun initializeLocationEngine() {
-
-    }
-
-    @SuppressWarnings("MissingPermission")
-    fun initializeLocationComponent() {
-
-    }
-
-    fun setCameraPosition(location: Location) {
-
-    }
-
-    override fun onExplanationNeeded(permissionsToExplain: MutableList<String>?) {
-    }
-
-    override fun onPermissionResult(granted: Boolean) {
-    }
-
-    override fun onMapReady(mapboxMap: MapboxMap) {
     }
 }

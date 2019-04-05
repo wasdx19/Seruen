@@ -253,7 +253,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/exitButton"
                 android:layout_width="62dp"
                 android:layout_height="20dp"
                 android:layout_centerHorizontal="true"
