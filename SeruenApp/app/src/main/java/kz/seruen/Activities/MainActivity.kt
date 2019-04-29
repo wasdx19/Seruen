@@ -62,6 +62,4 @@ class MainActivity : AppCompatActivity(){
         super.onBackPressed()
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
-
-
 }
