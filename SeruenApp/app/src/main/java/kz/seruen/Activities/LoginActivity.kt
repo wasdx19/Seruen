@@ -34,7 +34,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     public override fun onStart() {
         super.onStart()
-
     }
 
     private fun signIn(email:String, password:String){
@@ -43,24 +42,21 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             return
         }
 
-        auth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        Log.d(TAG, "signInWithEmail:success")
-                        val user = auth.currentUser
-                        updateUI(user)
-                    } else {
-                        Log.w(TAG, "signInWithEmail:failure", task.exception)
-                        Toast.makeText(baseContext, "Authentication failed.",
-                                Toast.LENGTH_SHORT).show()
-                        updateUI(null)
-                    }
+        auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
+            if (task.isSuccessful) {
+                Log.d(TAG, "signInWithEmail:success")
+                val user = auth.currentUser
+                updateUI(user)
+            } else {
+                Log.w(TAG, "signInWithEmail:failure", task.exception)
+                Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
+                updateUI(null)
+            }
 
-                    if (!task.isSuccessful) {
-                        Toast.makeText(baseContext, "Authentication failed.",
-                                Toast.LENGTH_SHORT).show()
-                    }
-                }
+            if (!task.isSuccessful) {
+                Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     private fun validateForm(): Boolean {
@@ -90,8 +86,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             val intent = Intent(this@LoginActivity, MainActivity::class.java)
             startActivity(intent)
         }else{
-            Toast.makeText(baseContext, "User null",
-                    Toast.LENGTH_SHORT).show()
+            Toast.makeText(baseContext, "User null", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -109,7 +104,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     companion object {
-        private const val TAG = "EmailPassword"
+        private const val TAG = "EmailSignIn"
     }
 }
 
