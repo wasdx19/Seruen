@@ -34,7 +34,7 @@
                 android:background="@drawable/search_rounded_angles"
                 android:fontFamily="@font/fut_med"
                 android:singleLine="true"
-                android:hint="Search"
+                android:hint="@string/pp1_search"
                 android:textColorHint="@color/color979797"
                 android:textAlignment="center"
                 android:textColor="@color/GP_GC_1"

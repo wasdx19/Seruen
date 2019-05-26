@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Seruen</string>
+    <string name="gp1_text1">Что это за приложение?</string>
+    <string name="gp1_text2"> Ваше лучшее ежедневное путешествие.</string>
+    <string name="gp2_text1">Почему это приложение?</string>
+    <string name="gp2_text2">Сделать вашу поездку необыкновенной.</string>
+    <string name="gp3_text1">Как это использовать?</string>
+    <string name="gp3_text2">Следуй за поездкой и делай свое путешествие.</string>
+    <string name="uip_header">Выберите ваши интересы</string>
+    <string name="uip_button">ОК</string>
+    <string name="lp_hint1">Почта</string>
+    <string name="lp_hint2">Пароль</string>
+    <string name="lp_hint3">Имя</string>
+    <string name="lp_hint4">Подтвердите пароль</string>
+    <string name="lp_signin_button">Вход</string>
+    <string name="lp_signup_button">Регистрация</string>
+    <string name="mp1_apportion">Рспределение</string>
+    <string name="mp1_ar">AR</string>
+    <string name="mp1_map">Карта</string>
+    <string name="mp1_places">Места</string>
+    <string name="trip_button">Поездка</string>
+    <string name="exit_button">Выход</string>
+    <string name="try_button">Пытаться</string>
+    <string name="change_button">Изменить</string>
+    <string name="skip_button">ПРОПУСТИТЬ</string>
+    <string name="get_started_button">НАЧАТЬ</string>
+    <string name="mp2_header">Поездка</string>
+    <string name="map2_et_from">От</string>
+    <string name="map2_et_to">До</string>
+    <string name="pp1_search">Поиск</string>
+    <string name="pp2_header">Корзина</string>
+    <string name="sp_main">Главные настройки</string>
+    <string name="sp_about">О нас</string>
+    <string name="sp_lang">Язык:</string>
+    <string name="sp_lang_kaz">Казахский</string>
+    <string name="sp_lang_eng">Английский</string>
+    <string name="sp_lang_rus">Русский</string>
+    <string name="sp_back">Задний фон:</string>
+    <string name="sp_notification">Уведомление</string>
+    <string name="sp_not_switch">Вкл</string>
+    <string name="sp_ui">Интересы:</string>
+    <string name="sp_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in velit eu nunc lobortis fringilla. Suspendisse eget luctus diam. Fusce efficitur ligula vel augue rhoncus egestas. Integer vitae tellus blandit, tempor odio quis, vulputate tortor.</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoid2FzZHgxOSIsImEiOiJjam9jMnZncHgwaXU4M3ZuMng2eHJxZGNuIn0.DVWyHsSyt7-IrnMy3VUcAA</string>
+
+    <string name="GP1">GP1</string>
+    <string name="GP2">GP2</string>
+    <string name="GP3">GP3</string>
+    <string name="sign_up_now">Зарегистрироваться сейчас</string>
+
+</resources>

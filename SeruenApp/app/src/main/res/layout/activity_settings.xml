@@ -32,7 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:text="Seruen"
+                    android:text="@string/app_name"
                     android:textColor="@color/colorPrimary"
                     android:fontFamily="@font/fut_med"
                     android:textSize="20sp" />
@@ -65,7 +65,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Main Settings"
+                        android:text="@string/sp_main"
                         android:textColor="@color/color666"
                         android:fontFamily="@font/fut_med"
                         android:textSize="17sp" />
@@ -88,7 +88,7 @@
                             android:layout_marginEnd="85dp"
                             android:layout_marginBottom="169dp"
                             android:fontFamily="@font/fut_med"
-                            android:text="Language:"
+                            android:text="@string/sp_lang"
                             android:textColor="@color/color666" />
 
                         <RadioButton
@@ -101,7 +101,7 @@
                             android:buttonTint="@color/color666"
                             android:scaleX="0.85"
                             android:scaleY="0.85"
-                            android:text="Kazakh"
+                            android:text="@string/sp_lang_kaz"
                             android:textColor="@color/color666"
                             android:fontFamily="@font/fut_med"
                             android:textSize="15sp" />
@@ -116,7 +116,7 @@
                             android:buttonTint="@color/color666"
                             android:scaleX="0.85"
                             android:scaleY="0.85"
-                            android:text="English"
+                            android:text="@string/sp_lang_eng"
                             android:textColor="@color/color666"
                             android:fontFamily="@font/fut_med"
                             android:textSize="15sp" />
@@ -131,7 +131,7 @@
                             android:buttonTint="@color/color666"
                             android:scaleX="0.85"
                             android:scaleY="0.85"
-                            android:text="Russian"
+                            android:text="@string/sp_lang_rus"
                             android:textColor="@color/color666"
                             android:fontFamily="@font/fut_med"
                             android:textSize="15sp" />
@@ -142,7 +142,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="9dp"
                             android:layout_marginTop="80dp"
-                            android:text="Background:"
+                            android:text="@string/sp_back"
                             android:fontFamily="@font/fut_med"
                             android:textColor="@color/color666" />
 
@@ -172,7 +172,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="9dp"
                             android:layout_marginTop="118dp"
-                            android:text="Notifications:"
+                            android:text="@string/sp_notification"
                             android:fontFamily="@font/fut_med"
                             android:textColor="@color/color666" />
 
@@ -185,7 +185,7 @@
                             android:background="@android:color/transparent"
                             android:scaleX="0.85"
                             android:scaleY="0.85"
-                            android:text="On"
+                            android:text="@string/sp_not_switch"
                             android:fontFamily="@font/fut_med"
                             android:textColor="@color/color666"
                             android:thumbTint="@color/GP_GC_1" />
@@ -196,7 +196,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="9dp"
                             android:layout_marginTop="151dp"
-                            android:text="Interests:"
+                            android:text="@string/sp_ui"
                             android:fontFamily="@font/fut_med"
                             android:textColor="@color/color666" />
 
@@ -207,7 +207,7 @@
                             android:layout_marginStart="88dp"
                             android:layout_marginTop="154dp"
                             android:background="@drawable/rounded_angels2"
-                            android:text="Change"
+                            android:text="@string/change_button"
                             android:fontFamily="@font/fut_med"
                             android:textColor="@color/GP_GC_1"
                             android:textSize="11sp" />
@@ -227,7 +227,7 @@
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="About"
+                        android:text="@string/sp_about"
                         android:layout_marginLeft="10dp"
                         android:fontFamily="@font/fut_med"
                         android:textColor="@color/color666"
@@ -245,7 +245,7 @@
                             android:id="@+id/about_set"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in velit eu nunc lobortis fringilla. Suspendisse eget luctus diam. Fusce efficitur ligula vel augue rhoncus egestas. Integer vitae tellus blandit, tempor odio quis, vulputate tortor."
+                            android:text="@string/sp_about_text"
                             android:textColor="@color/color666"
                             android:fontFamily="@font/fut_med" />
                     </RelativeLayout>
@@ -261,7 +261,7 @@
                 android:layout_marginTop="394dp"
                 android:layout_marginEnd="135dp"
                 android:background="@drawable/rounded_angles"
-                android:text="Exit"
+                android:text="@string/exit_button"
                 android:fontFamily="@font/fut_med"
                 android:textColor="@color/GP_GC_1" />
 
