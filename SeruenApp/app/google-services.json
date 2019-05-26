@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "361073664450-edg881fm1sjgnh9mg5uuqh2cb11j48te.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kz.seruen",
+            "certificate_hash": "4cca62a36d71875ffe343e2619195042f83253fb"
+          }
+        },
+        {
           "client_id": "361073664450-u40jur80jb5dpsj7fmv1tiil6c17i7em.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

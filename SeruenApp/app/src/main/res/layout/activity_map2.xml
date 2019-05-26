@@ -30,7 +30,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:text="Seruen"
+                    android:text="@string/app_name"
                     android:textColor="@color/colorPrimary"
                     android:fontFamily="@font/fut_med"
                     android:textSize="20sp" />
@@ -89,7 +89,7 @@
                             android:textColor="@color/GP_GC_1"
                             android:layout_marginLeft="3dp"
                             android:textSize="16sp"
-                            android:hint="From"
+                            android:hint="@string/map2_et_from"
                             android:textColorHint="@color/color979797"
                             android:singleLine="true"
                             android:fontFamily="@font/fut_med"/>
@@ -101,7 +101,7 @@
                             android:textColor="@color/GP_GC_2"
                             android:layout_marginLeft="3dp"
                             android:textSize="16sp"
-                            android:hint="To"
+                            android:hint="@string/map2_et_to"
                             android:textColorHint="@color/color979797"
                             android:singleLine="true"
                             android:fontFamily="@font/fut_med"/>

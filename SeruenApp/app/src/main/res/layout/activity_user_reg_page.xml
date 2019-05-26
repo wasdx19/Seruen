@@ -44,7 +44,7 @@
         android:fontFamily="@font/fut_med"
         tools:ignore="UnknownId" />
 
-<!--    <ImageButton
+    <ImageButton
         android:id="@+id/facebook_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
         android:layout_marginBottom="15dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/fut_med"
-        app:srcCompat="@drawable/facebook" />-->
+        app:srcCompat="@drawable/facebook" />
 
     <ImageButton
         android:id="@+id/google_btn"
