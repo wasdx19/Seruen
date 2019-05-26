@@ -48,7 +48,7 @@ class PlacesPageFragment1 : Fragment() {
         }*/
         loadPlacesData()
         val listViewPlaces:ListView = view!!.findViewById(R.id.listView_places)
-        val clubPlaces = getPlacesByType("Clubs")
+        val clubPlaces = getPlacesByType("News")
         val placesAdapter = PlacesAdapter(clubPlaces, activity!!.applicationContext)
         listViewPlaces.adapter = placesAdapter
         addPlacesTypeData()
@@ -75,13 +75,6 @@ class PlacesPageFragment1 : Fragment() {
         return view
     }
 
-    companion object {
-        fun newInstance(): PlacesPageFragment1 {
-            val fragment = PlacesPageFragment1()
-            return fragment
-        }
-    }
-
     fun getPlacesByType(type: String): ArrayList<Place>{
         val places = placesByType[type]
         if(places!=null)
@@ -105,7 +98,7 @@ class PlacesPageFragment1 : Fragment() {
             places_list.add(place)
         }
 
-        placesByType.put("Clubs", places_list)
+        placesByType.put("News", places_list)
     }
 
     fun addPlacesTypeData(){
@@ -122,9 +115,16 @@ class PlacesPageFragment1 : Fragment() {
     fun start(){
         loadPlacesData()
         val listViewPlaces:ListView = view!!.findViewById(R.id.listView_places)
-        val clubPlaces = getPlacesByType("Clubs")
+        val clubPlaces = getPlacesByType("News")
         val placesAdapter = PlacesAdapter(clubPlaces, activity!!.applicationContext)
         listViewPlaces.adapter = placesAdapter
+    }
+
+    companion object {
+        fun newInstance(): PlacesPageFragment1 {
+            val fragment = PlacesPageFragment1()
+            return fragment
+        }
     }
 
 }

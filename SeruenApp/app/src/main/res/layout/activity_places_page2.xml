@@ -30,7 +30,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:text="Basket"
+                    android:text="@string/pp2_header"
                     android:textColor="@color/colorPrimary"
                     android:fontFamily="@font/fut_med"
                     android:textSize="20sp" />
