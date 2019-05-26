@@ -8,6 +8,8 @@ import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -19,6 +21,9 @@ import kz.seruen.Utils.Sliders.GuidePageSlider
 class SignUpActivity : AppCompatActivity(),View.OnClickListener {
     private lateinit var auth: FirebaseAuth
 
+    private var loginField:EditText?=null
+    private var passwordField:EditText?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             val w = window
@@ -29,6 +34,8 @@ class SignUpActivity : AppCompatActivity(),View.OnClickListener {
         setContentView(R.layout.activity_signup_page)
 
         val button=findViewById<View>(R.id.button_signUp)
+        loginField=findViewById(R.id.sloginField)
+        passwordField=findViewById(R.id.spasswordField)
 
         button.setOnClickListener(this)
 
@@ -45,27 +52,17 @@ class SignUpActivity : AppCompatActivity(),View.OnClickListener {
             return
         }
 
-        // [START create_user_with_email]
-        auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
-                        Log.d(SignUpActivity.TAG, "createUserWithEmail:success")
-                        val user = auth.currentUser
-                        updateUI(user)
-                    } else {
-                        // If sign in fails, display a message to the user.
-                        Log.w(SignUpActivity.TAG, "createUserWithEmail:failure", task.exception)
-                        Toast.makeText(baseContext, "Authentication failed.",
-                                Toast.LENGTH_SHORT).show()
-                        updateUI(null)
-                    }
-
-                    // [START_EXCLUDE]
-                    //hideProgressDialog()
-                    // [END_EXCLUDE]
-                }
-// [END create_user_with_email]
+        auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
+            if (task.isSuccessful) {
+                Log.d(SignUpActivity.TAG, "createUserWithEmail:success")
+                val user = auth.currentUser
+                updateUI(user)
+            } else {
+                Log.w(SignUpActivity.TAG, "createUserWithEmail:failure", task.exception)
+                Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
+                updateUI(null)
+            }
+        }
     }
 
     private fun validateForm(): Boolean {
@@ -118,19 +115,18 @@ class SignUpActivity : AppCompatActivity(),View.OnClickListener {
             val intent = Intent(this@SignUpActivity, GuidePageSlider::class.java)
             startActivity(intent)
         }else{
-            Toast.makeText(baseContext, "User null",
-                    Toast.LENGTH_SHORT).show()
+            Toast.makeText(baseContext, "User null", Toast.LENGTH_SHORT).show()
         }
     }
 
     override fun onClick(v: View?) {
         val id= v!!.id
         when(id){
-            R.id.button_signUp->createAccount(sloginField.text.toString(),spasswordField.text.toString())
+            R.id.button_signUp->createAccount(loginField?.text.toString(),passwordField?.text.toString())
         }
     }
 
     companion object {
-        private const val TAG = "EmailPassword"
+        private const val TAG = "EmailSignUp"
     }
 }

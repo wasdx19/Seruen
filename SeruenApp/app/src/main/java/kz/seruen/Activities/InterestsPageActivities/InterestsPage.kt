@@ -16,7 +16,7 @@ class InterestsPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             val w = window
-            w.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+            w.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN)
             w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION)
         }
         super.onCreate(savedInstanceState)
