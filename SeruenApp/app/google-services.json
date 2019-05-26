@@ -1,52 +1,45 @@
 {
   "project_info": {
-    "project_number": "864016895719",
-    "firebase_url": "https://seruen-1551677358515.firebaseio.com",
-    "project_id": "seruen-1551677358515",
-    "storage_bucket": "seruen-1551677358515.appspot.com"
+    "project_number": "361073664450",
+    "firebase_url": "https://seruenapp-6d2bf.firebaseio.com",
+    "project_id": "seruenapp-6d2bf",
+    "storage_bucket": "seruenapp-6d2bf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:864016895719:android:f3867f3ee078f9b2",
+        "mobilesdk_app_id": "1:361073664450:android:f3867f3ee078f9b2",
         "android_client_info": {
           "package_name": "kz.seruen"
         }
       },
       "oauth_client": [
         {
-          "client_id": "864016895719-aklmgte8gfdfqbsbrrmmaqghl0b5fc4u.apps.googleusercontent.com",
+          "client_id": "361073664450-u40jur80jb5dpsj7fmv1tiil6c17i7em.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "kz.seruen",
-            "certificate_hash": "e99f5ca9718c722c305602681c2621705babcb3d"
+            "certificate_hash": "ae73f4baac6290b1c3188bad8339a513b78c1868"
           }
         },
         {
-          "client_id": "864016895719-9qipd1hdbn23s1ek8f1e8i46cjctldrj.apps.googleusercontent.com",
+          "client_id": "361073664450-dbdqkqm39c7n1vf33sqsse0lg2uqlau7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD7lJzAUqlPDtRcPV1SKXzrcibDR5L9K2E"
+          "current_key": "AIzaSyB_8gQINbRMld6JWl-cr4r3-A0nJvQ0OME"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "864016895719-9qipd1hdbn23s1ek8f1e8i46cjctldrj.apps.googleusercontent.com",
+              "client_id": "361073664450-dbdqkqm39c7n1vf33sqsse0lg2uqlau7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }
