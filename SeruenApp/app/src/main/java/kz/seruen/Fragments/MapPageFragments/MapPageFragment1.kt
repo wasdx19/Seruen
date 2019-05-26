@@ -1,38 +1,47 @@
 package kz.seruen.Fragments.MapPageFragments
 
-import android.location.Location
-import android.location.LocationListener
+import android.annotation.SuppressLint
 import android.os.Build
 import android.support.v4.app.Fragment
 import android.os.Bundle
 import android.support.v4.app.FragmentActivity
 import android.support.v4.app.FragmentManager
+import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.Button
-import com.mapbox.android.core.location.LocationEngine
+import android.widget.Toast
 import com.mapbox.android.core.permissions.PermissionsListener
 import com.mapbox.android.core.permissions.PermissionsManager
+import com.mapbox.geojson.Point
+import com.mapbox.mapboxsdk.annotations.Marker
+import com.mapbox.mapboxsdk.annotations.MarkerOptions
+import com.mapbox.mapboxsdk.geometry.LatLng
+import com.mapbox.mapboxsdk.location.LocationComponentActivationOptions
+import com.mapbox.mapboxsdk.location.LocationComponentOptions
+import com.mapbox.mapboxsdk.location.modes.CameraMode
+import com.mapbox.mapboxsdk.location.modes.RenderMode
 import com.mapbox.mapboxsdk.maps.MapView
 import com.mapbox.mapboxsdk.maps.MapboxMap
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
 import com.mapbox.mapboxsdk.maps.Style
-import com.mapbox.mapboxsdk.plugins.locationlayer.LocationLayerPlugin
-
 import kz.seruen.R
 
-class MapPageFragment1 : Fragment(), OnMapReadyCallback,LocationListener, PermissionsListener {
+class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback,MapboxMap.OnMapClickListener {
 
     private var fragmentActivity: FragmentActivity?=null
     private var mapTripButton: Button?=null
     private var mapView: MapView?=null
     private var map: MapboxMap?=null
-    private var permissionsManager: PermissionsManager?=null
-    private var locationEngine: LocationEngine?=null
-    private var locationLayerPlugin: LocationLayerPlugin?=null
-    private var location:Location?=null
+    private var permissionsManager:PermissionsManager=PermissionsManager(this)
+
+    private var mapStart:Button?=null
+    private var originPoint: Point?=null
+    private var destPoint:Point?=null
+    private var destMarker:Marker?=null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -52,12 +61,7 @@ class MapPageFragment1 : Fragment(), OnMapReadyCallback,LocationListener, Permis
         initialize()
 
         mapView?.onCreate(savedInstanceState)
-        mapView?.getMapAsync { mapboxMap ->
-            mapboxMap.setStyle(Style.MAPBOX_STREETS){
-
-            }
-        }
-
+        mapView?.getMapAsync(this)
         mapTripButton?.setOnClickListener {
             val fragmentManager: FragmentManager?=fragmentActivity?.supportFragmentManager
             val tr = fragmentManager?.beginTransaction()
@@ -65,6 +69,10 @@ class MapPageFragment1 : Fragment(), OnMapReadyCallback,LocationListener, Permis
             tr?.setCustomAnimations(R.anim.abc_fade_in, R.anim.abc_fade_out)
             tr?.replace(R.id.frame, tripFragment!!)?.addToBackStack(null)
             tr?.commit()
+        }
+
+        mapStart?.setOnClickListener{
+            //potom
         }
     }
 
@@ -75,56 +83,71 @@ class MapPageFragment1 : Fragment(), OnMapReadyCallback,LocationListener, Permis
     }
 
     override fun onMapReady(mapboxMap: MapboxMap) {
-        map=mapboxMap
-        enableLocation()
-    }
-
-    private fun enableLocation(){
-        if(PermissionsManager.areLocationPermissionsGranted(context)){
-            initializeLocationEngine()
-            initializeLocationLayer()
-        }else{
-            permissionsManager= PermissionsManager(this)
-            permissionsManager!!.requestLocationPermissions(activity)
+        this.map=mapboxMap
+        map?.setStyle(Style.MAPBOX_STREETS){
+            enableLocationComponent(it)
         }
     }
 
-    private fun initializeLocationEngine(){
+    @SuppressLint("MissingPermission")
+    private fun enableLocationComponent(mapStyle:Style){
+        if(PermissionsManager.areLocationPermissionsGranted(activity)) {
+            val customLocationComponentOptions = LocationComponentOptions
+                    .builder(view!!.context)
+                    .trackingGesturesManagement(true)
+                    .accuracyColor(ContextCompat.getColor(view!!.context, R.color.GP_GC_1))
+                    .build()
 
+            val locationComponentActivationOptions = LocationComponentActivationOptions
+                    .builder(view!!.context, mapStyle)
+                    .locationComponentOptions(customLocationComponentOptions)
+                    .useDefaultLocationEngine(true)
+                    .build()
+
+            map!!.locationComponent.apply {
+                activateLocationComponent(locationComponentActivationOptions)
+                isLocationComponentEnabled = true
+                cameraMode = CameraMode.TRACKING
+                renderMode = RenderMode.COMPASS
+            }
+        }else{
+            permissionsManager= PermissionsManager(this)
+            permissionsManager.requestLocationPermissions(activity)
+        }
     }
 
-    private fun initializeLocationLayer(){
-        locationLayerPlugin = LocationLayerPlugin(mapView!!, map!!)
-        locationLayerPlugin = LocationLayerPlugin(mapView!!, map!!, locationEngine)
-
-    }
-
-    override fun onLocationChanged(p0: Location?) {
-    }
-
-    override fun onStatusChanged(p0: String?, p1: Int, p2: Bundle?) {
-    }
-
-    override fun onProviderEnabled(p0: String?) {
-    }
-
-    override fun onProviderDisabled(p0: String?) {
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        permissionsManager.onRequestPermissionsResult(requestCode,permissions,grantResults)
     }
 
     override fun onExplanationNeeded(permissionsToExplain: MutableList<String>?) {
+        Toast.makeText(view!!.context, "User location permission explanation", Toast.LENGTH_LONG).show()
     }
 
     override fun onPermissionResult(granted: Boolean) {
         if(granted){
-            enableLocation()
+            enableLocationComponent(map?.style!!)
+        }else{
+            Toast.makeText(view!!.context,"User location permission not garanted", Toast.LENGTH_LONG).show()
+            activity?.finish()
         }
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    @SuppressLint("MissingPermission")
+    override fun onMapClick(point: LatLng): Boolean {
+        destMarker?.let {
+            map?.removeMarker(it)
+        }
 
+        destMarker=map?.addMarker(MarkerOptions().position(point))
+        destPoint=Point.fromLngLat(point.longitude,point.latitude)
+        originPoint= Point.fromLngLat(map?.locationComponent?.lastKnownLocation!!.longitude,map?.locationComponent?.lastKnownLocation!!.latitude)
+
+        mapStart?.isEnabled=true
+        mapStart?.setBackgroundResource(R.color.GP_GC_2)
+
+        return true
     }
-
 
     override fun onStart() {
         super.onStart()
