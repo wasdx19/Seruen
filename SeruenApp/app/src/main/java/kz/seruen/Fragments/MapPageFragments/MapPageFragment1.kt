@@ -15,6 +15,10 @@ import android.widget.Button
 import android.widget.Toast
 import com.mapbox.android.core.permissions.PermissionsListener
 import com.mapbox.android.core.permissions.PermissionsManager
+import com.mapbox.geojson.Point
+import com.mapbox.mapboxsdk.annotations.Marker
+import com.mapbox.mapboxsdk.annotations.MarkerOptions
+import com.mapbox.mapboxsdk.geometry.LatLng
 import com.mapbox.mapboxsdk.location.LocationComponentActivationOptions
 import com.mapbox.mapboxsdk.location.LocationComponentOptions
 import com.mapbox.mapboxsdk.location.modes.CameraMode
@@ -25,13 +29,19 @@ import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
 import com.mapbox.mapboxsdk.maps.Style
 import kz.seruen.R
 
-class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback {
+class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback,MapboxMap.OnMapClickListener {
 
     private var fragmentActivity: FragmentActivity?=null
     private var mapTripButton: Button?=null
     private var mapView: MapView?=null
     private var map: MapboxMap?=null
     private var permissionsManager:PermissionsManager=PermissionsManager(this)
+
+    private var mapStart:Button?=null
+    private var originPoint: Point?=null
+    private var destPoint:Point?=null
+    private var destMarker:Marker?=null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -59,6 +69,10 @@ class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback {
             tr?.setCustomAnimations(R.anim.abc_fade_in, R.anim.abc_fade_out)
             tr?.replace(R.id.frame, tripFragment!!)?.addToBackStack(null)
             tr?.commit()
+        }
+
+        mapStart?.setOnClickListener{
+            //potom
         }
     }
 
@@ -117,6 +131,22 @@ class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback {
             Toast.makeText(view!!.context,"User location permission not garanted", Toast.LENGTH_LONG).show()
             activity?.finish()
         }
+    }
+
+    @SuppressLint("MissingPermission")
+    override fun onMapClick(point: LatLng): Boolean {
+        destMarker?.let {
+            map?.removeMarker(it)
+        }
+
+        destMarker=map?.addMarker(MarkerOptions().position(point))
+        destPoint=Point.fromLngLat(point.longitude,point.latitude)
+        originPoint= Point.fromLngLat(map?.locationComponent?.lastKnownLocation!!.longitude,map?.locationComponent?.lastKnownLocation!!.latitude)
+
+        mapStart?.isEnabled=true
+        mapStart?.setBackgroundResource(R.color.GP_GC_2)
+
+        return true
     }
 
     override fun onStart() {
