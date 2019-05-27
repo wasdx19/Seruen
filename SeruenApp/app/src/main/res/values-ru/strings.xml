@@ -16,13 +16,16 @@
     <string name="lp_signin_button">Вход</string>
     <string name="lp_signup_button">Регистрация</string>
     <string name="mp1_apportion">Рспределение</string>
+    <string name="mp1_trip">Путешествие</string>
     <string name="mp1_ar">AR</string>
     <string name="mp1_map">Карта</string>
     <string name="mp1_places">Места</string>
     <string name="trip_button">Поездка</string>
+    <string name="delete_button">Удалить</string>
     <string name="exit_button">Выход</string>
     <string name="try_button">Пытаться</string>
     <string name="change_button">Изменить</string>
+    <string name="change_lang_button">Сменить Язык</string>
     <string name="skip_button">ПРОПУСТИТЬ</string>
     <string name="get_started_button">НАЧАТЬ</string>
     <string name="mp2_header">Поездка</string>
