@@ -25,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="179dp"
         android:fontFamily="@font/fut_med"
-        android:text="Seruen"
+        android:text="@string/app_name"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp" />
 
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="email"
+                android:hint="@string/lp_hint1"
                 android:ems="10"
                 android:inputType="textEmailAddress" />
 
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Password"
+                android:hint="@string/lp_hint2"
                 android:ems="10"
                 android:inputType="textPassword" />
 
@@ -94,7 +94,7 @@
                 android:id="@+id/button_signIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign In"
+                android:text="@string/lp_signin_button"
                 android:textColor="@color/GP_GC_1"
                 android:fontFamily="@font/fut_med"
                 android:layout_marginBottom="5dp"
@@ -104,7 +104,7 @@
                 android:id="@+id/button_signUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
+                android:text="@string/lp_signup_button"
                 android:textColor="@color/GP_GC_1"
                 android:fontFamily="@font/fut_med"
                 android:background="@drawable/rounded_angles"/>

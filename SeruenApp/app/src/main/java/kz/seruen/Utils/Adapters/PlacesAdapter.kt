@@ -24,7 +24,6 @@ class PlacesAdapter(items:ArrayList<Place>, ctx: Context):
 
     override fun getView(i: Int, view: View?, viewGroup: ViewGroup): View {
         var view = view
-
         val viewHolder: PlaceViewHolder
 
         if(view==null){
@@ -43,7 +42,6 @@ class PlacesAdapter(items:ArrayList<Place>, ctx: Context):
         viewHolder.info!!.text= place!!.info
 
         view.tag = viewHolder
-
         return view
     }
 

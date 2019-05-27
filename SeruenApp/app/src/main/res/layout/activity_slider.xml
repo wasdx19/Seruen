@@ -39,7 +39,7 @@
         android:layout_marginBottom="0dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/fut_med"
-        android:text="SKIP" />
+        android:text="@string/skip_button" />
 
 
     <Button
@@ -56,6 +56,6 @@
         android:layout_marginBottom="0dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/fut_med"
-        android:text="GET STARTED"
+        android:text="@string/get_started_button"
         android:visibility="gone"/>
 </RelativeLayout>

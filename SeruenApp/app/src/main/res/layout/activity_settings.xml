@@ -32,7 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:text="Seruen"
+                    android:text="@string/app_name"
                     android:textColor="@color/colorPrimary"
                     android:fontFamily="@font/fut_med"
                     android:textSize="20sp" />
@@ -65,7 +65,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Main Settings"
+                        android:text="@string/sp_main"
                         android:textColor="@color/color666"
                         android:fontFamily="@font/fut_med"
                         android:textSize="17sp" />
@@ -82,76 +82,45 @@
                             android:id="@+id/textView"
                             android:layout_width="93dp"
                             android:layout_height="21dp"
-                            android:layout_alignEnd="@+id/radioButton"
                             android:layout_marginStart="9dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="85dp"
-                            android:layout_marginBottom="169dp"
                             android:fontFamily="@font/fut_med"
-                            android:text="Language:"
+                            android:text="@string/sp_lang"
                             android:textColor="@color/color666" />
 
-                        <RadioButton
-                            android:id="@+id/radioButton"
+                        <Button
+                            android:id="@+id/change_lang"
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
-                            android:layout_marginStart="90dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="23dp"
                             android:layout_marginTop="9dp"
-                            android:background="@android:color/transparent"
-                            android:buttonTint="@color/color666"
-                            android:scaleX="0.85"
-                            android:scaleY="0.85"
-                            android:text="Kazakh"
-                            android:textColor="@color/color666"
+                            android:layout_toEndOf="@+id/textView"
+                            android:background="@drawable/rounded_angels2"
                             android:fontFamily="@font/fut_med"
-                            android:textSize="15sp" />
-
-                        <RadioButton
-                            android:id="@+id/radioButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="21dp"
-                            android:layout_below="@+id/radioButton"
-                            android:layout_marginStart="90dp"
-                            android:layout_marginTop="0dp"
-                            android:buttonTint="@color/color666"
-                            android:scaleX="0.85"
-                            android:scaleY="0.85"
-                            android:text="English"
-                            android:textColor="@color/color666"
-                            android:fontFamily="@font/fut_med"
-                            android:textSize="15sp" />
-
-                        <RadioButton
-                            android:id="@+id/radioButton3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="20dp"
-                            android:layout_below="@+id/radioButton2"
-                            android:layout_marginStart="89dp"
-                            android:layout_marginTop="1dp"
-                            android:buttonTint="@color/color666"
-                            android:scaleX="0.85"
-                            android:scaleY="0.85"
-                            android:text="Russian"
-                            android:textColor="@color/color666"
-                            android:fontFamily="@font/fut_med"
-                            android:textSize="15sp" />
+                            android:text="@string/change_lang_button"
+                            android:textColor="@color/GP_GC_1"
+                            android:textSize="11sp" />
 
                         <TextView
                             android:id="@+id/textView8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView"
                             android:layout_marginStart="9dp"
-                            android:layout_marginTop="80dp"
-                            android:text="Background:"
+                            android:layout_marginTop="13dp"
                             android:fontFamily="@font/fut_med"
+                            android:text="@string/sp_back"
                             android:textColor="@color/color666" />
 
                         <ImageButton
                             android:id="@+id/imageButton2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="102dp"
-                            android:layout_marginTop="84dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="43dp"
+                            android:layout_toEndOf="@+id/textView8"
                             android:background="@android:color/transparent"
                             android:fontFamily="@font/fut_med"
                             android:src="@drawable/optimised21" />
@@ -160,33 +129,38 @@
                             android:id="@+id/textView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="123dp"
-                            android:layout_marginTop="80dp"
-                            android:text="Default"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="42dp"
+                            android:layout_toEndOf="@+id/imageButton2"
                             android:fontFamily="@font/fut_med"
+                            android:text="Default"
                             android:textColor="@color/color666" />
 
                         <TextView
                             android:id="@+id/textView11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView8"
                             android:layout_marginStart="9dp"
-                            android:layout_marginTop="118dp"
-                            android:text="Notifications:"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/fut_med"
+                            android:text="@string/sp_notification"
                             android:textColor="@color/color666" />
 
                         <Switch
                             android:id="@+id/switch1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="99dp"
-                            android:layout_marginTop="117dp"
+                            android:layout_below="@+id/textView10"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_toEndOf="@+id/textView11"
                             android:background="@android:color/transparent"
+                            android:fontFamily="@font/fut_med"
                             android:scaleX="0.85"
                             android:scaleY="0.85"
-                            android:text="On"
-                            android:fontFamily="@font/fut_med"
+                            android:text="@string/sp_not_switch"
                             android:textColor="@color/color666"
                             android:thumbTint="@color/GP_GC_1" />
 
@@ -194,21 +168,25 @@
                             android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView11"
                             android:layout_marginStart="9dp"
-                            android:layout_marginTop="151dp"
-                            android:text="Interests:"
+                            android:layout_marginTop="12dp"
                             android:fontFamily="@font/fut_med"
+                            android:layout_marginBottom="15dp"
+                            android:text="@string/sp_ui"
                             android:textColor="@color/color666" />
 
                         <Button
                             android:id="@+id/button2"
                             android:layout_width="50dp"
                             android:layout_height="20dp"
-                            android:layout_marginStart="88dp"
-                            android:layout_marginTop="154dp"
+                            android:layout_below="@+id/switch1"
+                            android:layout_marginStart="56dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@+id/textView12"
                             android:background="@drawable/rounded_angels2"
-                            android:text="Change"
                             android:fontFamily="@font/fut_med"
+                            android:text="@string/change_button"
                             android:textColor="@color/GP_GC_1"
                             android:textSize="11sp" />
 
@@ -227,7 +205,7 @@
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="About"
+                        android:text="@string/sp_about"
                         android:layout_marginLeft="10dp"
                         android:fontFamily="@font/fut_med"
                         android:textColor="@color/color666"
@@ -245,7 +223,7 @@
                             android:id="@+id/about_set"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in velit eu nunc lobortis fringilla. Suspendisse eget luctus diam. Fusce efficitur ligula vel augue rhoncus egestas. Integer vitae tellus blandit, tempor odio quis, vulputate tortor."
+                            android:text="@string/sp_about_text"
                             android:textColor="@color/color666"
                             android:fontFamily="@font/fut_med" />
                     </RelativeLayout>
@@ -261,7 +239,7 @@
                 android:layout_marginTop="394dp"
                 android:layout_marginEnd="135dp"
                 android:background="@drawable/rounded_angles"
-                android:text="Exit"
+                android:text="@string/exit_button"
                 android:fontFamily="@font/fut_med"
                 android:textColor="@color/GP_GC_1" />
 

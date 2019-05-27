@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/user_interests_page_header_string"
+            android:text="@string/uip_header"
             android:textAlignment="center"
             android:fontFamily="@font/fut_med"
             android:textColor="@color/colorPrimary"
@@ -169,7 +169,7 @@
                 android:background="@drawable/rounded_angles"
                 android:gravity="center"
                 android:layout_alignParentBottom="true"
-                android:text="@string/user_interests_page_button_string"
+                android:text="@string/uip_button"
                 android:textColor="@color/GP_GC_1"
                 android:fontFamily="@font/fut_med"
                 android:textSize="14dp" />

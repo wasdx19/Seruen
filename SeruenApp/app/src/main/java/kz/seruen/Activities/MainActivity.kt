@@ -18,6 +18,7 @@ import kz.seruen.Fragments.SettingPageFragments.SettingsPageFragment
 
 class MainActivity : AppCompatActivity(){
     internal var tripBtn: Button?=null
+    public var botNav: BottomNavigationViewEx? = null
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity(){
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val botNav= findViewById<BottomNavigationViewEx>(R.id.botNav)
+        botNav= findViewById<BottomNavigationViewEx>(R.id.botNav)
         botNav?.enableAnimation(false)
         botNav?.enableShiftingMode(true)
         botNav?.enableItemShiftingMode(false)

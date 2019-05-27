@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Seruen</string>
+    <string name="gp1_text1">Bagdarlama ne turaly?</string>
+    <string name="gp1_text2"> Sizdin kundelikti serueniniz.</string>
+    <string name="gp2_text1">Nege bul bagdarlama?</string>
+    <string name="gp2_text2">Sizge seruenge shygudyn erekshe zholy.</string>
+    <string name="gp3_text1">Kalay koldanu kerek?</string>
+    <string name="gp3_text2">Seruenge shygynyz zhane saiahattanyz.</string>
+    <string name="uip_header">Ozinizge unaityn zherlerdi tandanyz</string>
+    <string name="uip_button">OK</string>
+    <string name="lp_hint1">Email</string>
+    <string name="lp_hint2">Kupiasoz</string>
+    <string name="lp_hint3">Esiminiz</string>
+    <string name="lp_hint4">Kupiasozdy rastanyz</string>
+    <string name="lp_signin_button">Kiru</string>
+    <string name="lp_signup_button">Tirkelu</string>
+    <string name="mp1_apportion">Uakyt bolu</string>
+    <string name="mp1_trip">Sayiahat</string>
+    <string name="mp1_ar">AR</string>
+    <string name="mp1_map">Karta</string>
+    <string name="mp1_places">Kydyratyn Zherler</string>
+    <string name="trip_button">Sapar</string>
+    <string name="delete_button">Oshiru</string>
+    <string name="exit_button">Shygu</string>
+    <string name="try_button">Tyrysu</string>
+    <string name="change_button">Ozgertu</string>
+    <string name="change_lang_button">Tildi Ozgertu</string>
+    <string name="skip_button">OTKIZU</string>
+    <string name="get_started_button">BASTAU</string>
+    <string name="mp2_header">Sapar</string>
+    <string name="map2_et_from">Bastap</string>
+    <string name="map2_et_to">Deiyn</string>
+    <string name="pp1_search">Izdeu</string>
+    <string name="pp2_header">Korzhyn</string>
+    <string name="sp_main">Negizgi parametrler</string>
+    <string name="sp_about">Biz turaly</string>
+    <string name="sp_lang">Til:</string>
+    <string name="sp_lang_kaz">Qazaqsha</string>
+    <string name="sp_lang_eng">Agylshynsha</string>
+    <string name="sp_lang_rus">Oryssha</string>
+    <string name="sp_back">Artky fon:</string>
+    <string name="sp_notification">Habarlama</string>
+    <string name="sp_not_switch">Kosu</string>
+    <string name="sp_ui">Kyzygushylyktar:</string>
+    <string name="sp_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in velit eu nunc lobortis fringilla. Suspendisse eget luctus diam. Fusce efficitur ligula vel augue rhoncus egestas. Integer vitae tellus blandit, tempor odio quis, vulputate tortor.</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoid2FzZHgxOSIsImEiOiJjam9jMnZncHgwaXU4M3ZuMng2eHJxZGNuIn0.DVWyHsSyt7-IrnMy3VUcAA</string>
+
+    <string name="GP1">GP1</string>
+    <string name="GP2">GP2</string>
+    <string name="GP3">GP3</string>
+    <string name="sign_up_now">Kazir tirkeliniz</string>
+
+</resources>
+
+
+
+
