@@ -15,13 +15,16 @@
     <string name="lp_signin_button">Sign In</string>
     <string name="lp_signup_button">Sign Up</string>
     <string name="mp1_apportion">Apportion</string>
+    <string name="mp1_trip">Trip</string>
     <string name="mp1_ar">AR</string>
     <string name="mp1_map">Map</string>
     <string name="mp1_places">Places</string>
     <string name="trip_button">Trip</string>
+    <string name="delete_button">Delete</string>
     <string name="exit_button">Exit</string>
     <string name="try_button">Try</string>
     <string name="change_button">Change</string>
+    <string name="change_lang_button">Change Language</string>
     <string name="skip_button">SKIP</string>
     <string name="get_started_button">GET STARTED</string>
     <string name="mp2_header">Trip</string>

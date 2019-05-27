@@ -16,13 +16,16 @@
     <string name="lp_signin_button">Kiru</string>
     <string name="lp_signup_button">Tirkelu</string>
     <string name="mp1_apportion">Uakyt bolu</string>
+    <string name="mp1_trip">Sayiahat</string>
     <string name="mp1_ar">AR</string>
     <string name="mp1_map">Karta</string>
     <string name="mp1_places">Kydyratyn Zherler</string>
     <string name="trip_button">Sapar</string>
+    <string name="delete_button">Oshiru</string>
     <string name="exit_button">Shygu</string>
     <string name="try_button">Tyrysu</string>
     <string name="change_button">Ozgertu</string>
+    <string name="change_lang_button">Tildi Ozgertu</string>
     <string name="skip_button">OTKIZU</string>
     <string name="get_started_button">BASTAU</string>
     <string name="mp2_header">Sapar</string>
@@ -34,8 +37,8 @@
     <string name="sp_about">Biz turaly</string>
     <string name="sp_lang">Til:</string>
     <string name="sp_lang_kaz">Qazaqsha</string>
-    <string name="sp_lang_eng">Agylshyn</string>
-    <string name="sp_lang_rus">Orys</string>
+    <string name="sp_lang_eng">Agylshynsha</string>
+    <string name="sp_lang_rus">Oryssha</string>
     <string name="sp_back">Artky fon:</string>
     <string name="sp_notification">Habarlama</string>
     <string name="sp_not_switch">Kosu</string>
