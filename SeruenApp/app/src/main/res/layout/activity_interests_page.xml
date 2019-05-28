@@ -48,112 +48,386 @@
                         android:id="@+id/linear_layout_1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:weightSum="3">
 
-                        <ImageView
-                            android:id="@+id/imageView11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_nature"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#ffffff">
 
-                        <ImageView
-                            android:id="@+id/imageView12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                            <TextView
+                                android:id="@+id/tv_nature"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="NATURE"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imageView13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                            <ImageView
+                                android:id="@+id/iv_nature"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_restoran"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardBackgroundColor="#ffffff">
+
+                            <TextView
+                                android:id="@+id/tv_restoran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="RESTOURANT"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_restoran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_cafe"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#ffffff">
+
+                            <TextView
+                                android:id="@+id/tv_cafe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="CAFE"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_cafe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+
+                        </android.support.v7.widget.CardView>
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/linear_layout_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp">
 
-                        <ImageView
-                            android:id="@+id/imageView21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_nightClub"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#ffffff">
 
-                        <ImageView
-                            android:id="@+id/imageView22"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                            <TextView
+                                android:id="@+id/tv_nightClub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="NIGHT CLUB"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imageView23"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                            <ImageView
+                                android:id="@+id/iv_nightClub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_bar"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardBackgroundColor="#ffffff">
+
+                            <TextView
+                                android:id="@+id/tv_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="BAR"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_zoo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#ffffff">
+
+                            <TextView
+                                android:id="@+id/tv_zoo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="ZOO"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_zoo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/linear_layout_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp">
 
-                        <ImageView
-                            android:id="@+id/imageView31"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_park"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#ffffff">
 
-                        <ImageView
-                            android:id="@+id/imageView32"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                            <TextView
+                                android:id="@+id/tv_park"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="PARK"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imageView33"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                            <ImageView
+                                android:id="@+id/iv_park"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_museum"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardBackgroundColor="#ffffff">
+
+                            <TextView
+                                android:id="@+id/tv_museum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="MUSEUM"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_museum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_theatre"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#ffffff">
+
+                            <TextView
+                                android:id="@+id/tv_theatre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="THEATRE"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_theatre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/linear_layout_4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="10dp">
 
-                        <ImageView
-                            android:id="@+id/imageView41"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_circuit"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#ffffff">
 
-                        <ImageView
-                            android:id="@+id/imageView42"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                            <TextView
+                                android:id="@+id/tv_circuit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="CIRCUIT"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imageView43"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/rec1" />
+                            <ImageView
+                                android:id="@+id/iv_circuit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_kTraditional"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardBackgroundColor="#ffffff">
+
+                            <TextView
+                                android:id="@+id/tv_kTraditional"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="TRADITIONAL"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_kTraditional"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cv_showplaces"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="35dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#ffffff">
+
+                            <TextView
+                                android:id="@+id/tv_showplaces"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/fut_med"
+                                android:gravity="center_horizontal"
+                                android:text="SHOWPLACES"
+                                android:textColor="@color/color666"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_showPlaces"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/checkicon"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"/>
+                        </android.support.v7.widget.CardView>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -164,8 +438,7 @@
                 android:id="@+id/button_ok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginBottom="1dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_angles"
                 android:gravity="center"
                 android:layout_alignParentBottom="true"
