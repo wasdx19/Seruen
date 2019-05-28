@@ -23,7 +23,6 @@ class FirstPageActivity : AppCompatActivity() {
         }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_page)
-
         auth= FirebaseAuth.getInstance()
     }
 
