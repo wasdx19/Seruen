@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Button
-import kz.seruen.Place
 import kz.seruen.R
 
 class PlacesButtonAdapter(val places_type: ArrayList<String>): RecyclerView.Adapter<PlacesButtonAdapter.ViewHolder>(){

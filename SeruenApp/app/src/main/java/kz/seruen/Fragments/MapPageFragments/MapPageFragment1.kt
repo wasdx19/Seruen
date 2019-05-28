@@ -27,6 +27,7 @@ import com.mapbox.mapboxsdk.maps.MapView
 import com.mapbox.mapboxsdk.maps.MapboxMap
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
 import com.mapbox.mapboxsdk.maps.Style
+import kz.seruen.Fragments.PlacesPageFragments.PlacesPageFragment3
 import kz.seruen.R
 
 class MapPageFragment1 : Fragment(), PermissionsListener, OnMapReadyCallback,MapboxMap.OnMapClickListener {

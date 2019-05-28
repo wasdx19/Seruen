@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login_page.*
 import kotlinx.android.synthetic.main.activity_signup_page.*
 import kz.seruen.R
+import kz.seruen.Utils.DBUtilsFb
 import kz.seruen.Utils.Sliders.GuidePageSlider
 
 class SignUpActivity : AppCompatActivity(),View.OnClickListener {
@@ -56,6 +57,7 @@ class SignUpActivity : AppCompatActivity(),View.OnClickListener {
             if (task.isSuccessful) {
                 Log.d(SignUpActivity.TAG, "createUserWithEmail:success")
                 val user = auth.currentUser
+                DBUtilsFb.addUser(auth.uid!!)
                 updateUI(user)
             } else {
                 Log.w(SignUpActivity.TAG, "createUserWithEmail:failure", task.exception)

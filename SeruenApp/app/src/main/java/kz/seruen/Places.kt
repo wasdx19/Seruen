@@ -1,6 +1,6 @@
 package kz.seruen
 
-class Place{
+class Places{
     var name: String? = null
     var info: String? = null
     var type: String? = null
